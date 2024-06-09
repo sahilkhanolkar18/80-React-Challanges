@@ -11,7 +11,7 @@ const Home = () => {
       <hr className="mx-[20px] text-[#868e96]" />
       {/* <p className="text-center text-[green]">ME</p> */}
       {Snippents.map((item, index) => (
-        <Card key={index} label={item.name} index={index} />
+        <Card key={index} label={item.name} index={index} image={item.image} />
       ))}
       <div className="absolute top-0 right-10 flex items-center gap-2">
         <div className="w-11 h-11  rounded-full overflow-hidden">

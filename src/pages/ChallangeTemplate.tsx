@@ -101,22 +101,22 @@ const ChallangeTemplate = () => {
         </button>
       </div>
       {activeTab === "problem" && (
-        <div className="mx-[20px]  mt-6">
-          <h1 className="font-semibold text-[28px] text-[#212529]">
+        <div className="mx-[20px]  mt-6 w-[1000px]">
+          <h1 className="font-semibold text-[32px] text-[#343a40]">
             {/*@ts-ignore*/}
             {Snippents[id - 1]?.heading}
           </h1>
-          <p className="text-[#495057] text-md my-2">
+          <p className="text-[#495057] text-md my-2 text-lg mt-3">
             {/*@ts-ignore*/}
             {Snippents[id - 1]?.description}
           </p>
-
-          <ul className="list-disc pl-5">
+          <h4 className="font-bold text-[#495057] text-md my-4">Tasks</h4>
+          <ul className="list-disc pl-5 flex flex-col gap-1">
             {/*@ts-ignore*/}
             {Snippents[id - 1]?.problem.map(
               (problem: string, index: number) => {
                 return (
-                  <li key={index} className="text-[#495057] text-md">
+                  <li key={index} className="text-[#495057] text-lg">
                     {problem}
                   </li>
                 );
@@ -128,14 +128,15 @@ const ChallangeTemplate = () => {
 
       {activeTab === "code" && (
         <div>
-          <div className="bg-[#f59f00b0]  w-[48%] ml-[40px] h-[80vh] absolute my-[30px] rounded-md">
+          <p className="absolute top-[119px] left-[42px]">Result:</p>
+          <div className="bg-[#222831]  w-[48%] ml-[40px] h-[70vh] absolute my-[30px] rounded-md">
             <Suspense fallback={<div>Loading...</div>}>
               {/*@ts-ignore*/}
               <Component />
             </Suspense>
           </div>
 
-          <div className="w-[45%] ml-[53%] h-[85vh] overflow-y-auto ">
+          <div className="w-[45%] ml-[53%] h-[75vh] overflow-y-auto ">
             <div className="absolute top-[75px] z-50  ">
               <button className="bg-[#f8f9fa] px-4 py-2 border border-[#ced4da] rounded-sm text-sm cursor-default">
                 Challenge{id}.tsx
@@ -160,17 +161,49 @@ const ChallangeTemplate = () => {
         </div>
       )}
       {activeTab === "learned" && (
-        <div className="mx-[20px] mt-6">
-          <h1 className="font-semibold text-[28px] text-[#212529]">
-            {/*@ts-ignore*/}
+        // <div className="mx-[20px] mt-6">
 
-            {Snippents[id - 1]?.learningHeading}
-          </h1>
-          {/*@ts-ignore*/}
+        //   <h1 className="font-semibold text-[28px] text-[#212529]">
+        //     {/*@ts-ignore*/}
 
-          {Snippents[id - 1]?.note.map((i) => {
-            return <p className="text-[#495057] text-md">{i}</p>;
-          })}
+        //     {Snippents[id - 1]?.learningHeading}
+        //   </h1>
+        //   {/*@ts-ignore*/}
+
+        //   {Snippents[id - 1]?.note.map((i) => {
+        //     return <p className="text-[#495057] text-md">{i}</p>;
+        //   })}
+        // </div>
+        <div>
+          <p className="absolute top-[119px] left-[42px]">Result:</p>
+          <div className="bg-[#222831]  w-[48%] ml-[40px] h-[70vh] absolute my-[30px] rounded-md">
+            <Suspense fallback={<div>Loading...</div>}>
+              {/*@ts-ignore*/}
+              <Component />
+            </Suspense>
+          </div>
+          <div className="w-[45%] ml-[53%] h-[85vh] overflow-y-auto ">
+            <div className="absolute top-[110px] z-50  ">
+              <div className="mx-[20px] mt-6">
+                <h1 className="font-semibold text-[28px] text-[#212529]">
+                  {/*@ts-ignore*/}
+                  What I learned ?
+                </h1>
+                <h1 className="font-semibold text-[16px] text-[#212529] mt-3">
+                  {/*@ts-ignore*/}
+                  {Snippents[id - 1]?.learningHeading}
+                </h1>
+                {/*@ts-ignore*/}
+
+                <ul className="list-disc pl-5 flex flex-col gap-1 mt-3">
+                  {/*@ts-ignore*/}
+                  {Snippents[id - 1]?.note.map((i) => {
+                    return <li className="text-[#495057] text-md">{i}</li>;
+                  })}
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       )}
 
@@ -181,6 +214,12 @@ const ChallangeTemplate = () => {
         <div className="flex flex-col items-center gap-0">
           <p className="text-sm">Sahil Khanolkar</p>
           <div className="text-[12px]">⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+      <div className="fixed bottom-0 left-0 w-full p-2">
+        <hr className="mb-2" />
+        <div className="text-center">
+          <p>@80-React-Challanges by Sahil Khanolkar</p>
         </div>
       </div>
     </div>

@@ -25,17 +25,17 @@ const LactoseTolerant = () => {
 };
 
 const Challange3 = () => {
-  const [randomBool, setRandomBool] = useState(true);
+  const [isLactoseTolerant, setIsLactoseTolerant] = useState(true);
 
   const generateRandomBoolean = () => {
     const randomValue = Math.random() < 0.5;
     console.log(randomValue);
-    setRandomBool(randomValue);
+    setIsLactoseTolerant(randomValue);
   };
 
   return (
     <div className="flex flex-col items-center justify-center mt-[25%] gap-2">
-      {randomBool ? <LactoseIntolerant /> : <LactoseTolerant />}
+      {isLactoseTolerant ? <LactoseIntolerant /> : <LactoseTolerant />}
       <button
         className="px-2 py-1 bg-background rounded-sm w-[100px]"
         onClick={generateRandomBoolean}

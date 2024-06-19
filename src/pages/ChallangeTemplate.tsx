@@ -71,7 +71,7 @@ const ChallangeTemplate = () => {
         >
           <BackIcon />
         </button>
-        <h1 className="text-md font-semibold">Challange #{id}</h1>
+        <h1 className="text-md font-semibold ">Challange #{id}</h1>
       </div>
       <hr className="mb-2  m-auto mx-[25px] text-[#868e96]" />
       <div className="relative flex gap-2 ml-6  bg-[#e9ecef] py-1.5 pl-2 w-[455px] rounded-md">
@@ -138,7 +138,7 @@ const ChallangeTemplate = () => {
 
           <div className="w-[45%] ml-[53%] h-[75vh] overflow-y-auto ">
             <div className="absolute top-[75px] z-50  ">
-              <button className="bg-[#f8f9fa] px-4 py-2 border border-[#ced4da] rounded-sm text-sm cursor-default">
+              <button className="bg-[#f8f9fa] px-4 py-2 border border-[#ced4da] rounded-sm text-sm cursor-default ">
                 Challenge{id}.tsx
               </button>
             </div>
@@ -154,7 +154,7 @@ const ChallangeTemplate = () => {
             />
           </div>
 
-          <button className="absolute bottom-8 right-20 px-3 py-2 bg-[#f59f00c2] hover:bg-[#f59f008a] flex rounded">
+          <button className="absolute bottom-8 right-20 px-3 py-2 bg-[#f59f00fb] hover:bg-[#f59f00a9] flex rounded">
             <GitLogo />
             View in GitHub
           </button>
@@ -184,7 +184,7 @@ const ChallangeTemplate = () => {
           </div>
           <div className="w-[45%] ml-[53%] h-[85vh] overflow-y-auto ">
             <div className="absolute top-[110px] z-50  ">
-              <div className="mx-[20px] mt-6">
+              <div className="mx-[20px] mt-6 max-w-[700px]">
                 <h1 className="font-semibold text-[28px] text-[#212529]">
                   {/*@ts-ignore*/}
                   What I learned ?

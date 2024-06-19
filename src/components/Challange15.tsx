@@ -17,7 +17,7 @@ const LimitedTextInput = ({ characterLimit }: any) => {
     setInputValue(event.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
 
     if (thresholdMet) {

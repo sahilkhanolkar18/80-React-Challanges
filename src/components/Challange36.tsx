@@ -1,5 +1,3 @@
-import React from "react";
-
 const Challange36 = () => {
   return <div>Challange36</div>;
 };

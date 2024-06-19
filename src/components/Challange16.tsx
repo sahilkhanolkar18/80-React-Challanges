@@ -15,6 +15,7 @@ const Challange16 = () => {
           percent={50}
           strokeWidth={4}
           strokeColor="#f3a007"
+          //@ts-ignore
           strokeWidth={1.5}
           trailWidth={1.5}
         />

@@ -10,6 +10,8 @@ import Challange13 from "../assets/Challange13.png";
 import Challange14 from "../assets/Challange14.png";
 import Challange15 from "../assets/Challange15.png";
 import Challange16 from "../assets/Challange16.png";
+import Challange17 from "../assets/Challange17.png";
+import Challange18 from "../assets/Challange18.png";
 
 const Snippents = [
   {
@@ -308,45 +310,44 @@ const Snippents = [
     ],
     image: Challange16,
   },
-  // {
-  //   id: 17,
-  //   name: "(pending)Form Builder",
-  //   heading: "(pending)Form Builders",
-  //   description:
-  //     "In this challenge we're going to get meta and build a form builder. It looks complex, but with the JSX already in place, your primary job is to manage the formFields array. The user will need to be able to add items to it, update items in it, and remove items from it.All of the functions with their parameters are in place, you'll just need to examine the JSX and update each accordingly.",
-  //   problem: [
-  //     "Allow users to add a form field",
-  //     "Allow users to delete form fields",
-  //     "Allow users to update form field values",
-  //     "Allow users to submit the dynamic form with the new values",
-  //   ],
-  //   learningHeading: "(pending)Form Builder",
-  //   note: [
-  //     "Learned passing down props as objects to a Component.",
-  //     "Destructuring props and using it in component.",
-  //     "Creating reusable Component.",
-  //   ],
-  //   image: Challange1,
-  // },
-  // {
-  //   id: 18,
-  //   name: "(pending)Search Filter",
-  //   heading: "(pending)Search Filter",
-  //   description:
-  //     "In this challenge, you're given an app that uses useEffect as a way to react to changes in the search term. That's not ideal – useEffect should be used for synchronizing, not for reacting to changes in a value. Refactor the app to get rid of useEffect but keep the same functionality.",
-  //   problem: [
-  //     "Render the list of items",
-  //     "Filter the list of items based on search term",
-  //     "Don't use useEffect",
-  //   ],
-  //   learningHeading: "(pending)Search Filter",
-  //   note: [
-  //     "Learned passing down props as objects to a Component.",
-  //     "Destructuring props and using it in component.",
-  //     "Creating reusable Component.",
-  //   ],
-  //   image: Challange1,
-  // },
+  {
+    id: 17,
+    name: "Form Builder",
+    heading: "Form Builders",
+    description:
+      "In this challenge we're going to get meta and build a form builder. It looks complex, but with the JSX already in place, your primary job is to manage the formFields array. The user will need to be able to add items to it, update items in it, and remove items from it.All of the functions with their parameters are in place, you'll just need to examine the JSX and update each accordingly.",
+    problem: [
+      "Allow users to add a form field",
+      "Allow users to delete form fields",
+      "Allow users to update form field values",
+      "Allow users to submit the dynamic form with the new values",
+    ],
+    learningHeading: "Form Builder",
+    note: [
+      "Created a dynamic Form builder component.",
+      "Handled dynamic properties for fields in a very Efficient and Clean way.",
+      "Finally displayed output from Form fields.",
+    ],
+    image: Challange17,
+  },
+  {
+    id: 18,
+    name: "Search Filter",
+    heading: "Search Filter",
+    description:
+      "In this challenge, you're given an app that uses useEffect as a way to react to changes in the search term. That's not ideal – useEffect should be used for synchronizing, not for reacting to changes in a value. Refactor the app to get rid of useEffect but keep the same functionality.",
+    problem: [
+      "Render the list of items",
+      "Filter the list of items based on search term",
+      "Don't use useEffect",
+    ],
+    learningHeading: "Search Filter",
+    note: [
+      "Implemented Search functionality to list.",
+      "Render list Correctly.",
+    ],
+    image: Challange18,
+  },
   // {
   //   id: 19,
   //   name: "(pending)Clock",

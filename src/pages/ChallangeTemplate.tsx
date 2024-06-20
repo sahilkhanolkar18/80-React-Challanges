@@ -59,7 +59,7 @@ const ChallangeTemplate = () => {
     }
   };
 
-  const language = "tsx";
+  const language = "jsx";
   const lineNumbers = true;
 
   return (
@@ -129,7 +129,7 @@ const ChallangeTemplate = () => {
       {activeTab === "code" && (
         <div>
           <p className="absolute top-[119px] left-[42px]">Result:</p>
-          <div className="bg-[#222831]  w-[48%] ml-[40px] h-[70vh] absolute my-[30px] rounded-md">
+          <div className="bg-[#222831]  w-[48%] ml-[40px] h-[70vh] absolute my-[30px] rounded-md overflow-y-auto">
             <Suspense fallback={<div>Loading...</div>}>
               {/*@ts-ignore*/}
               <Component />
@@ -176,7 +176,7 @@ const ChallangeTemplate = () => {
         // </div>
         <div>
           <p className="absolute top-[119px] left-[42px]">Result:</p>
-          <div className="bg-[#222831]  w-[48%] ml-[40px] h-[70vh] absolute my-[30px] rounded-md">
+          <div className="bg-[#222831]  w-[48%] ml-[40px] h-[70vh] absolute my-[30px] rounded-md overflow-y-auto">
             <Suspense fallback={<div>Loading...</div>}>
               {/*@ts-ignore*/}
               <Component />

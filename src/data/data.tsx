@@ -9,6 +9,7 @@ import Challange11 from "../assets/Challange11.png";
 import Challange13 from "../assets/Challange13.png";
 import Challange14 from "../assets/Challange14.png";
 import Challange15 from "../assets/Challange15.png";
+import Challange16 from "../assets/Challange16.png";
 
 const Snippents = [
   {
@@ -289,8 +290,8 @@ const Snippents = [
   },
   {
     id: 16,
-    name: "(wip)Multistep Form",
-    heading: "(wip)Multistep Form",
+    name: "Multistep Form",
+    heading: "Multistep Form",
     description:
       "In this challenge you're given a multistep form for getting data from the user. With the JSX already in place, update the component's state and functions in order to allow the user to progress through the form, updating the state as necessary.",
     problem: [
@@ -299,13 +300,13 @@ const Snippents = [
       "Update the formData as the user progresses through the form",
       "When finished, submit the form and reset the component's state",
     ],
-    learningHeading: "(wip)Multistep Form",
+    learningHeading: "Multistep Form",
     note: [
-      "Learned passing down props as objects to a Component.",
-      "Destructuring props and using it in component.",
-      "Creating reusable Component.",
+      "Efficiently handled multiple form Inputs.",
+      "Managed and rendered expected multiform view.",
+      "Wrote Reusable and Modular Code.",
     ],
-    image: Challange1,
+    image: Challange16,
   },
   // {
   //   id: 17,

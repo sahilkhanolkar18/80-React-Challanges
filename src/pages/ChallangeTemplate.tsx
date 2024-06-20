@@ -154,10 +154,15 @@ const ChallangeTemplate = () => {
             />
           </div>
 
-          <button className="absolute bottom-8 right-20 px-3 py-2 bg-[#f59f00fb] hover:bg-[#f59f00a9] flex rounded">
+          <a
+            href={`https://github.com/sahilkhanolkar18/80-React-Challanges/blob/master/src/components/Challange${id}.tsx`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="absolute bottom-8 right-20 px-3 py-2 bg-[#f59f00fb] hover:bg-[#f59f00a9] flex rounded"
+          >
             <GitLogo />
             View in GitHub
-          </button>
+          </a>
         </div>
       )}
       {activeTab === "learned" && (

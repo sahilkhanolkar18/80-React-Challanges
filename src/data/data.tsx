@@ -344,7 +344,8 @@ const Snippents = [
     learningHeading: "Search Filter",
     note: [
       "Implemented Search functionality to list.",
-      "Render list Correctly.",
+      "Render list Correctly and without useEffect hook.",
+      "Learned that useEffect should be used for synchronizing",
     ],
     image: Challange18,
   },

@@ -12,6 +12,9 @@ import Challange15 from "../assets/Challange15.png";
 import Challange16 from "../assets/Challange16.png";
 import Challange17 from "../assets/Challange17.png";
 import Challange18 from "../assets/Challange18.png";
+import Challange19 from "../assets/Challange19.png";
+import Challange20 from "../assets/Challange20.png";
+import Challange21 from "../assets/Challange21.png";
 
 const Snippents = [
   {
@@ -349,62 +352,65 @@ const Snippents = [
     ],
     image: Challange18,
   },
-  // {
-  //   id: 19,
-  //   name: "(pending)Clock",
-  //   heading: "(pending)Clock",
-  //   description:
-  //     "In this challenge, you'll be synchronizing the current time with your component's state by updating the UI every second with the new time. To do that, you'll need the right combination of useEffect, component state, and the browser's setInterval method.",
-  //   problem: ["Update the time every second", "Clear the timer when unmounted"],
-  //   learningHeading: "(pending)Clock",
-  //   note: [
-  //     "Learned passing down props as objects to a Component.",
-  //     "Destructuring props and using it in component.",
-  //     "Creating reusable Component.",
-  //   ],
-  //   image: Challange1,
-  // },
-  // {
-  //   id: 20,
-  //   name: "(pending)Country Info",
-  //   heading: "(pending)Country Info",
-  //   description:
-  //     "In this challenge, you'll be synchronizing the result of fetching country data from an external API with your component's state.",
-  //   problem: [
-  //     "Display a loading state when fetching data",
-  //     "Fetch new data based on the user's input",
-  //     "Render an error message if fetch fails",
-  //   ],
-  //   learningHeading: "(pending)Country Info",
-  //   note: [
-  //     "Learned passing down props as objects to a Component.",
-  //     "Destructuring props and using it in component.",
-  //     "Creating reusable Component.",
-  //   ],
-  //   image: Challange1,
-  // },
-  // {
-  //   id: 21,
-  //   name: "(pending)Hacker News",
-  //   heading: "(pending)Hacker News",
-  //   description:
-  //     "In this challenge, we'll be fetching data from the Hacker News API. However, unlike the other effects challenges, the state and event handlers for this one don't need updating. Instead, given the fetchData function, you'll need to synchronize your component with the Hacker News API and then update the JSX appropriately.This one is tricky so take your time and think it through. Anywhere in the JSX you see null or TODO you'll need to update it.",
-  //   problem: [
-  //     "Fetch data based on the search query",
-  //     "Display the loading state while fetching",
-  //     "Fetch new results when the tag filter changes",
-  //     "Allow the user to navigate to the next and previous pages",
-  //     "Disable the Next and Previous buttons based on the number of pages",
-  //     "Display the results in a numbered list, with each page showing the correct position of each post",
-  //   ],
-  //   learningHeading: "(pending)Hacker News",
-  //   note: [
-  //     "Learned passing down props as objects to a Component.",
-  //     "Destructuring props and using it in component.",
-  //     "Creating reusable Component.",
-  //   ],
-  //   image: Challange1,
-  // },
+  {
+    id: 19,
+    name: "Clock",
+    heading: "Clock",
+    description:
+      "In this challenge, you'll be synchronizing the current time with your component's state by updating the UI every second with the new time. To do that, you'll need the right combination of useEffect, component state, and the browser's setInterval method.",
+    problem: ["Update the time every second", "Clear the timer when unmounted"],
+    learningHeading: "Clock",
+    note: [
+      "Displayed time in real time.",
+      "Learned about mounting, updating, and unmounting phases in react.",
+      "Cleared time interval and saved from memory leak",
+    ],
+    image: Challange19,
+  },
+  {
+    id: 20,
+    name: "Country Info",
+    heading: "Country Info",
+    description:
+      "In this challenge, you'll be synchronizing the result of fetching country data from an external API with your component's state.",
+    problem: [
+      "Display a loading state when fetching data",
+      "Fetch new data based on the user's input",
+      "Render an error message if fetch fails",
+    ],
+    learningHeading: "Country Info",
+    note: [
+      "Learned to use useEffect and synchronizing the result.",
+      "Handled Loading state and error Also avoided multiple api been called back to back",
+      "Dynamically displayed data from the api.",
+    ],
+    image: Challange20,
+  },
+  {
+    id: 21,
+    name: "Hacker News",
+    heading: "Hacker News",
+    description:
+      "In this challenge, we'll be fetching data from the Hacker News API. However, unlike the other effects challenges, the state and event handlers for this one don't need updating. Instead, given the fetchData function, you'll need to synchronize your component with the Hacker News API and then update the JSX appropriately.This one is tricky so take your time and think it through. Anywhere in the JSX you see null or TODO you'll need to update it.",
+    problem: [
+      "Fetch data based on the search query",
+      "Display the loading state while fetching",
+      "Fetch new results when the tag filter changes",
+      "Allow the user to navigate to the next and previous pages",
+      "Disable the Next and Previous buttons based on the number of pages",
+      "Display the results in a numbered list, with each page showing the correct position of each post",
+    ],
+    learningHeading: "Hacker News",
+    note: [
+      "Fetched data based on the search query",
+      "Displayed the loading state while fetching.",
+      "Fetched new results when the tag filter changes.",
+      "Allowed the user to navigate to the next and previous pages",
+      "Disabled the Next and Previous buttons based on the number of pages",
+      "Displayed the results in a numbered list, with each page showing the correct position of each post.",
+    ],
+    image: Challange21,
+  },
   // {
   //   id: 22,
   //   name: "(pending)Autofocus",

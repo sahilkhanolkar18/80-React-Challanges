@@ -15,6 +15,8 @@ import Challange18 from "../assets/Challange18.png";
 import Challange19 from "../assets/Challange19.png";
 import Challange20 from "../assets/Challange20.png";
 import Challange21 from "../assets/Challange21.png";
+import Challange22 from "../assets/Challange22.png";
+import Challange23 from "../assets/Challange23.png";
 
 const Snippents = [
   {
@@ -411,39 +413,37 @@ const Snippents = [
     ],
     image: Challange21,
   },
-  // {
-  //   id: 22,
-  //   name: "(pending)Autofocus",
-  //   heading: "(pending)Autofocus",
-  //   description:
-  //     "In this challenge you're given a ref and a simple input element. Your job is to autofocus the input when the component first renders.",
-  //   problem: ["Autofocus the input when the component renders"],
-  //   learningHeading: "(pending)Autofocus",
-  //   note: [
-  //     "Learned passing down props as objects to a Component.",
-  //     "Destructuring props and using it in component.",
-  //     "Creating reusable Component.",
-  //   ],
-  //   image: Challange1,
-  // },
-  // {
-  //   id: 23,
-  //   name: "(pending)Video Player",
-  //   heading: "(pending)Video Player",
-  //   description:
-  //     "In this challenge, you'll give the user the ability to play and pause the video. To do so, you'll need to invoke the play or pause methods on the video element itself. You'll also want to update the UI to reflect the current state of the video.",
-  //   problem: [
-  //     "Toggle the play state when the button is clicked",
-  //     "Play and pause the video when the button is clicked",
-  //   ],
-  //   learningHeading: "(pending)Video Player",
-  //   note: [
-  //     "Learned passing down props as objects to a Component.",
-  //     "Destructuring props and using it in component.",
-  //     "Creating reusable Component.",
-  //   ],
-  //   image: Challange1,
-  // },
+  {
+    id: 22,
+    name: "Autofocus",
+    heading: "Autofocus",
+    description:
+      "In this challenge you're given a ref and a simple input element. Your job is to autofocus the input when the component first renders.",
+    problem: ["Autofocus the input when the component renders"],
+    learningHeading: "Autofocus",
+    note: [
+      "Learned to use useRef an escape hatch to use vanilla js without messing with react-dom",
+      "Used useRef to focus current element",
+    ],
+    image: Challange22,
+  },
+  {
+    id: 23,
+    name: "Video Player",
+    heading: "Video Player",
+    description:
+      "In this challenge, you'll give the user the ability to play and pause the video. To do so, you'll need to invoke the play or pause methods on the video element itself. You'll also want to update the UI to reflect the current state of the video.",
+    problem: [
+      "Toggle the play state when the button is clicked",
+      "Play and pause the video when the button is clicked",
+    ],
+    learningHeading: "Video Player",
+    note: [
+      "Played and paused the video with useRef hook.",
+      "Updated the UI to reflect the current state of the video",
+    ],
+    image: Challange23,
+  },
   // {
   //   id: 24,
   //   name: "(pending)Field Notes",

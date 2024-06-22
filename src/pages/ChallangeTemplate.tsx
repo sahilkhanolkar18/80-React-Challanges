@@ -212,13 +212,22 @@ const ChallangeTemplate = () => {
         </div>
       )}
 
-      <div className="absolute top-0 right-16 flex items-center gap-2">
-        <div className="w-11 h-11  rounded-full overflow-hidden">
+      <div className="absolute top-0 right-16 flex  gap-2">
+        <div className="w-11 h-11  rounded-full overflow-hidden border border-[#da6c36] border-[2px]">
           <img src={Me} alt="me" />
         </div>
-        <div className="flex flex-col items-center gap-0">
-          <p className="text-sm">Sahil Khanolkar</p>
-          <div className="text-[12px]">⭐⭐⭐⭐⭐</div>
+        <div className="flex flex-col items-center relative">
+          <p className="text-sm mt-1">Sahil Khanolkar</p>
+          {/* <div className="text-[12px]">⭐⭐⭐⭐⭐</div> */}
+
+          <a
+            href={`https://github.com/sahilkhanolkar18`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[12px] underline absolute bottom-1 right-8"
+          >
+            Git Hub
+          </a>
         </div>
       </div>
       <div className="fixed bottom-0 left-0 w-full p-2">

@@ -17,6 +17,18 @@ import Challange20 from "../assets/Challange20.png";
 import Challange21 from "../assets/Challange21.png";
 import Challange22 from "../assets/Challange22.png";
 import Challange23 from "../assets/Challange23.png";
+import Challange24 from "../assets/Challange24.png";
+import Challange25 from "../assets/Challange25.png";
+import Challange26 from "../assets/Challange26.png";
+import Challange27 from "../assets/Challange27.png";
+import Challange28 from "../assets/Challange28.png";
+import Challange29 from "../assets/Challange29.png";
+import Challange31 from "../assets/Challange31.png";
+import Challange32 from "../assets/Challange32.png";
+import Challange34 from "../assets/Challange34.png";
+import Challange35 from "../assets/Challange35.png";
+import Challange37 from "../assets/Challange37.png";
+import Challange38 from "../assets/Challange38.png";
 
 const Snippents = [
   {
@@ -444,306 +456,279 @@ const Snippents = [
     ],
     image: Challange23,
   },
-  // {
-  //   id: 24,
-  //   name: "(pending)Field Notes",
-  //   heading: "(pending)Field Notes",
-  //   description:
-  //     "In this challenge you're tasked with completing an app that collects new notes from the user and displays them in a list. Whenever a new note is added, you'll need to scroll it into view.",
-  //   problem: [
-  //     "Add a new note when the user submits the form",
-  //     "Scroll the new note into view",
-  //     "Clear the input field when the user submits a valid note",
-  //     "Prevent empty notes from being added",
-  //   ],
-  //   learningHeading: "(pending)Field Notes",
-  //   note: [
-  //     "Learned passing down props as objects to a Component.",
-  //     "Destructuring props and using it in component.",
-  //     "Creating reusable Component.",
-  //   ],
-  //   image: Challange1,
-  // },
-  // {
-  //   id: 25,
-  //   name: "(pending)Click Outside",
-  //   heading: "(pending)Click Outside",
-  //   description:
-  //     "In this challenge you'll be adding a modal experience to the app. The user needs to be able to open the modal and then close it either by clicking the close icon in the modal itself, or by clicking anywhere outside of the modal.You'll need both component state and a reference to the modal to make it work properly. You'll also want to reference the pointerdown event if you're not familiar with it.",
-  //   problem: [
-  //     "Don't render the modal by default",
-  //     "Clicking the 'Open Modal' button should open the modal",
-  //     "Don't close the modal when the dialog is clicked",
-  //     "Close modal by clicking close icon",
-  //     "Close the modal when the user clicks outside of the modal",
-  //   ],
-  //   learningHeading: "(pending)Click Outside",
-  //   note: [
-  //     "Learned passing down props as objects to a Component.",
-  //     "Destructuring props and using it in component.",
-  //     "Creating reusable Component.",
-  //   ],
-  //   image: Challange1,
-  // },
-  // {
-  //   id: 26,
-  //   name: "(pending)Expanding Textarea",
-  //   heading: "(pending)Expanding Textarea",
-  //   description:
-  //     "In this challenge you'll need to add functionality to the app so that the user can type into the textarea and it will expand to fit the content as they type.",
-  //   problem: [
-  //     "Update the value for the textarea when typing",
-  //     "Set the textarea's height based on its scroll height",
-  //   ],
-  //   learningHeading: "(pending)Function Props",
-  //   note: [
-  //     "Learned passing down props as objects to a Component.",
-  //     "Destructuring props and using it in component.",
-  //     "Creating reusable Component.",
-  //   ],
-  //   image: Challange1,
-  // },
-  // {
-  //   id: 27,
-  //   name: "(pending)Follow the Leader",
-  //   heading: "(pending)Follow the Leader",
-  //   description:
-  //     "The concept is simple, animate the center of the box to the coordinates that the user clicks.To do this, you'll need to update the position array to include the new x and y positions of where the box should transform to.",
-  //   problem: ["Animate the box to the coordinates that the user clicks"],
-  //   learningHeading: "(pending)Follow the Leader",
-  //   note: [
-  //     "Learned passing down props as objects to a Component.",
-  //     "Destructuring props and using it in component.",
-  //     "Creating reusable Component.",
-  //   ],
-  //   image: Challange1,
-  // },
-  // {
-  //   id: 28,
-  //   name: "(pending)Auth",
-  //   heading: "(pending)Auth",
-  //   description:
-  //     "In this challenge our goal is to make the user's authentication state (as well as a way to update that state) available to anywhere in our component tree that needs it.You're given an authContext with the expected shape of the user's auth state - isAuthenticated: boolean, login: function, logout: function.Your challenge is to finish the AuthProvider component - making isAuthenticated, login, and logout available anywhere in the component tree - and then to use those values in any component that needs them.",
-  //   problem: [
-  //     "Render a login form when the user is not authenticated",
-  //     "Display the Dashboard component after the user logs in",
-  //     "Display the login screen if the user logs out",
-  //   ],
-  //   learningHeading: "(pending)Auth",
-  //   note: [
-  //     "Learned passing down props as objects to a Component.",
-  //     "Destructuring props and using it in component.",
-  //     "Creating reusable Component.",
-  //   ],
-  //   image: Challange1,
-  // },
-  // {
-  //   id: 29,
-  //   name: "(pending)Translations",
-  //   heading: "(pending)Translations",
-  //   description:
-  //     "In this challenge your goal is to make translation state (as well as a way to update that state) available anywhere in the component tree.You're given a languageContext with the expected shape of the translation data - language: string, changeLanguage: function, and translation: function.Your challenge is to finish the LanguageProvider component - making language, changeLanguage, and translation available anywhere in the component tree - and then to use those values in any component that needs them.",
-  //   problem: [
-  //     "Update the language based on the user's selection",
-  //     "Apply the correct translation when the language is changed",
-  //   ],
-  //   learningHeading: "(pending)Translations",
-  //   note: [
-  //     "Learned passing down props as objects to a Component.",
-  //     "Destructuring props and using it in component.",
-  //     "Creating reusable Component.",
-  //   ],
-  //   image: Challange1,
-  // },
-  // {
-  //   id: 30,
-  //   name: "(pending)Tabs",
-  //   heading: "(pending)Tabs",
-  //   description:
-  //     "Given the completed JSX, finish the app so that the correct tab content is shown when a tab is clicked.This challenge is deliberately vague. You'll need to carefully examine the final app as well as each component and what props it receives to figure out how to complete the challenge.Once finished, you should have a working tabs implementation that is hyper flexible and not coupled at all to the current layout of the app.",
-  //   problem: ["Show the correct tab content when a tab is clicked"],
-  //   learningHeading: "(pending)Tabs",
-  //   note: [
-  //     "Learned passing down props as objects to a Component.",
-  //     "Destructuring props and using it in component.",
-  //     "Creating reusable Component.",
-  //   ],
-  //   image: Challange1,
-  // },
-  // {
-  //   id: 31,
-  //   name: "(pending)News Feed",
-  //   heading: "(pending)News Feed",
-  //   description:
-  //     "In this challenge you're given a news feed with different videos. To improve the UX of your feed, the challenge is to make sure only one video can play at a time.Specifically you'll probably want to tackle the following steps.Finish the NewsFeed component by rendering a VideoItem component for every video in the videos array.Finish the VideoPlaybackProvider component so that playingVideoId and setPlayingVideoId are available throughout the component tree.Finish VideoItem so that the user can play and pause a video, but that when they do, any other video that is currently playing is paused.In my opinion this is the hardest challenge we've had throughout the course so far, so keep that in mind as you wrestle with imposter syndrome and self-doubt 🫶.",
-  //   problem: ["Allow only one video to play at a time"],
-  //   learningHeading: "(pending)News Feed",
-  //   note: [
-  //     "Learned passing down props as objects to a Component.",
-  //     "Destructuring props and using it in component.",
-  //     "Creating reusable Component.",
-  //   ],
-  //   image: Challange1,
-  // },
-  // {
-  //   id: 32,
-  //   name: "(pending)Function Props",
-  //   heading: "(pending)Function Props",
-  //   description:
-  //     "Although this challenge looks similar to the previous one, there are some subtle differences. As before, apply the new props to the Badge component so that it renders properly.",
-  //   problem: [
-  //     "Give the image a proper alt tag using the author's name",
-  //     "Make sure the badge displays the profile image correctly",
-  //     "Display the author's name in the badge's heading",
-  //     "Display the author's handle below the heading",
-  //     "Apply the correct styles to the outer div",
-  //   ],
-  //   learningHeading: "(pending)Function Props",
-  //   note: [
-  //     "Learned passing down props as objects to a Component.",
-  //     "Destructuring props and using it in component.",
-  //     "Creating reusable Component.",
-  //   ],
-  //   image: Challange1,
-  // },
-  // {
-  //   id: 33,
-  //   name: "(pending)Multistep Form with useReducer",
-  //   heading: "(pending)Multistep Form with useReducer",
-  //   description:
-  //     "Given the solution code to the previous 'Multistep Form' challenge you encountered earlier in the course, your job is to refactor the app to use useReducer to manage state instead of useState.",
-  //   problem: [
-  //     "Enable a user to transition to the next step",
-  //     "Enable a user to return to the previous Step",
-  //     "Keep track of the step and form state correctly",
-  //     "Reset the form when the user submits it",
-  //     "Use the useReducer hook to manage the component's state",
-  //   ],
-  //   learningHeading: "(pending)Multistep Form with useReducer",
-  //   note: [
-  //     "Learned passing down props as objects to a Component.",
-  //     "Destructuring props and using it in component.",
-  //     "Creating reusable Component.",
-  //   ],
-  //   image: Challange1,
-  // },
-  // {
-  //   id: 34,
-  //   name: "(pending)Task Manager",
-  //   heading: "(pending)Task Manager",
-  //   description:
-  //     "Given the completed TaskManager component, your challenge is to finish implementing the reducer function so that the user can add, update, and delete tasks.",
-  //   problem: [
-  //     "The user should be able to add a new task",
-  //     "The user should be able to update the status of a task",
-  //     "The user should be able to delete a task",
-  //   ],
-  //   learningHeading: "(pending)Task Manager",
-  //   note: [
-  //     "Learned passing down props as objects to a Component.",
-  //     "Destructuring props and using it in component.",
-  //     "Creating reusable Component.",
-  //   ],
-  //   image: Challange1,
-  // },
-  // {
-  //   id: 35,
-  //   name: "(pending)Add To Cart",
-  //   heading: "(pending)Add To Cart",
-  //   description:
-  //     "Given the final ShoppingCart component (including all the JSX and event handlers), your job is to finish implementing both the reducer function as well as the calculateTotal function.calculateTotal takes in the cart and should return a single numeric value representing the total cost of all the items in the cart.For the reducer, look at the component to figure out which action types are being dispatched as well as the shape of the action objects.",
-  //   problem: [
-  //     "Render the appropriate UI if there are no items in the cart",
-  //     "Give the user the ability to add items to the shopping cart",
-  //     "Give the user the ability to remove items from the shopping cart",
-  //     "Appropriately update the quantity of items in the shopping cart",
-  //     "Appropriately calculate the total cost of all items in the shopping cart",
-  //   ],
-  //   learningHeading: "(pending)Add To Cart",
-  //   note: [
-  //     "Learned passing down props as objects to a Component.",
-  //     "Destructuring props and using it in component.",
-  //     "Creating reusable Component.",
-  //   ],
-  //   image: Challange1,
-  // },
-  // {
-  //   id: 36,
-  //   name: "(pending)Undo Redo",
-  //   heading: "(pending)Undo Redo",
-  //   description:
-  //     "The goal of this challenge is, using useReducer, add increment, decrement, undo, and redo functionality to your application. Unlike the other challenges, you'll need to wire up useReducer, the event handlers, and the reducer function yourself - you won't need to touch the JSX though.",
-  //   problem: [
-  //     "Clicking increment should increment the counter",
-  //     "Clicking decrement should decrement the counter",
-  //     "Clicking undo and redo should undo or redo the previous action",
-  //   ],
-  //   learningHeading: "(pending)Undo Redo",
-  //   note: [
-  //     "Learned passing down props as objects to a Component.",
-  //     "Destructuring props and using it in component.",
-  //     "Creating reusable Component.",
-  //   ],
-  //   image: Challange1,
-  // },
-  // {
-  //   id: 37,
-  //   name: "(pending)Localized Primes",
-  //   heading: "(pending)Localized Primes",
-  //   description:
-  //     "Complete the app so that the user can change their locale as well as iterate through every prime number. Take special care to only re-calculate the prime number when the user clicks NEXT PRIME.",
-  //   problem: [
-  //     "Increment the prime number count when the button is clicked",
-  //     "Change the language when the select option is changed",
-  //     "Memoize nthprime so that it's only re-calculated when count changes",
-  //   ],
-  //   learningHeading: "(pending)Localized Primes",
-  //   note: [
-  //     "Learned passing down props as objects to a Component.",
-  //     "Destructuring props and using it in component.",
-  //     "Creating reusable Component.",
-  //   ],
-  //   image: Challange1,
-  // },
-  // {
-  //   id: 38,
-  //   name: "(pending)Data Table",
-  //   heading: "(pending)Data Table",
-  //   description:
-  //     "Given an application that already has the completed JSX and event handlers for deciding how you should filter and sort the data (searchTerm, sortColumn, and sortOrder), your job is to fetch the data (using the fetchData function), and then, in the most performant way possible, using searchTerm, sortColumn, and sortOrder, update the filteredData and sortedData variables.filteredData should be a memoized array of data that has been filtered based on the searchTerm.sortedData should be a memoized array of filteredData that has been sorted based on the sortColumn and sortOrder.",
-  //   problem: [
-  //     "The user can search Pokémon",
-  //     "The user can sort Pokémon",
-  //     "The Pokémon data is correctly memoized",
-  //   ],
-  //   learningHeading: "(pending)Data Table",
-  //   note: [
-  //     "Learned passing down props as objects to a Component.",
-  //     "Destructuring props and using it in component.",
-  //     "Creating reusable Component.",
-  //   ],
-  //   image: Challange1,
-  // },
+  {
+    id: 24,
+    name: "Field Notes",
+    heading: "Field Notes",
+    description:
+      "In this challenge you're tasked with completing an app that collects new notes from the user and displays them in a list. Whenever a new note is added, you'll need to scroll it into view.",
+    problem: [
+      "Add a new note when the user submits the form",
+      "Scroll the new note into view",
+      "Clear the input field when the user submits a valid note",
+      "Prevent empty notes from being added",
+    ],
+    learningHeading: "Field Notes",
+    note: [
+      "Scrolled the new note into view using useRef and vanilla js.",
+      "Clear the input field when the user submits a valid note.",
+      "Prevented empty notes from being added.",
+    ],
+    image: Challange24,
+  },
+  {
+    id: 25,
+    name: "Click Outside",
+    heading: "Click Outside",
+    description:
+      "In this challenge you'll be adding a modal experience to the app. The user needs to be able to open the modal and then close it either by clicking the close icon in the modal itself, or by clicking anywhere outside of the modal.You'll need both component state and a reference to the modal to make it work properly. You'll also want to reference the pointerdown event if you're not familiar with it.",
+    problem: [
+      "Don't render the modal by default",
+      "Clicking the 'Open Modal' button should open the modal",
+      "Don't close the modal when the dialog is clicked",
+      "Close modal by clicking close icon",
+      "Close the modal when the user clicks outside of the modal",
+    ],
+    learningHeading: "Click Outside",
+    note: [
+      "Created toggle modal.",
+      "Calculated element and used pointerdown event to handle area that shouldn't close modal.",
+      "Handled close modal in vanilla js.",
+    ],
+    image: Challange25,
+  },
+  {
+    id: 26,
+    name: "Expanding Textarea",
+    heading: "Expanding Textarea",
+    description:
+      "In this challenge you'll need to add functionality to the app so that the user can type into the textarea and it will expand to fit the content as they type.",
+    problem: [
+      "Update the value for the textarea when typing",
+      "Set the textarea's height based on its scroll height",
+    ],
+    learningHeading: "Function Props",
+    note: [
+      "Calculated textarea's height based on its scroll height.",
+      "Updated the value for the textarea when typing.",
+    ],
+    image: Challange26,
+  },
+  {
+    id: 27,
+    name: "(pending)Follow the Leader",
+    heading: "(pending)Follow the Leader",
+    description:
+      "The concept is simple, animate the center of the box to the coordinates that the user clicks.To do this, you'll need to update the position array to include the new x and y positions of where the box should transform to.",
+    problem: ["Animate the box to the coordinates that the user clicks"],
+    learningHeading: "(pending)Follow the Leader",
+    note: [
+      "Learned passing down props as objects to a Component.",
+      "Destructuring props and using it in component.",
+      "Creating reusable Component.",
+    ],
+    image: Challange27,
+  },
+  {
+    id: 28,
+    name: "Auth",
+    heading: "Auth",
+    description:
+      "In this challenge our goal is to make the user's authentication state (as well as a way to update that state) available to anywhere in our component tree that needs it.You're given an authContext with the expected shape of the user's auth state - isAuthenticated: boolean, login: function, logout: function.Your challenge is to finish the AuthProvider component - making isAuthenticated, login, and logout available anywhere in the component tree - and then to use those values in any component that needs them.",
+    problem: [
+      "Render a login form when the user is not authenticated",
+      "Display the Dashboard component after the user logs in",
+      "Display the login screen if the user logs out",
+    ],
+    learningHeading: "Auth",
+    note: [
+      "Used useContext hook for the login data to be available anywhere in the component tree.",
+      "Rendered a login form when the user is not authenticated.",
+      "Displayed the Dashboard component after the user logs in.",
+      "Creating reusable Component.",
+    ],
+    image: Challange28,
+  },
+  {
+    id: 29,
+    name: "Translations",
+    heading: "Translations",
+    description:
+      "In this challenge your goal is to make translation state (as well as a way to update that state) available anywhere in the component tree.You're given a languageContext with the expected shape of the translation data - language: string, changeLanguage: function, and translation: function.Your challenge is to finish the LanguageProvider component - making language, changeLanguage, and translation available anywhere in the component tree - and then to use those values in any component that needs them.",
+    problem: [
+      "Update the language based on the user's selection",
+      "Apply the correct translation when the language is changed",
+    ],
+    learningHeading: "Translations",
+    note: ["Updated the language based on the user's selection."],
+    image: Challange29,
+  },
+  {
+    id: 30,
+    name: "(pending)Tabs",
+    heading: "(pending)Tabs",
+    description:
+      "Given the completed JSX, finish the app so that the correct tab content is shown when a tab is clicked.This challenge is deliberately vague. You'll need to carefully examine the final app as well as each component and what props it receives to figure out how to complete the challenge.Once finished, you should have a working tabs implementation that is hyper flexible and not coupled at all to the current layout of the app.",
+    problem: ["Show the correct tab content when a tab is clicked"],
+    learningHeading: "(pending)Tabs",
+    note: [
+      "Learned passing down props as objects to a Component.",
+      "Destructuring props and using it in component.",
+      "Creating reusable Component.",
+    ],
+    image: Challange1,
+  },
+  {
+    id: 31,
+    name: "News Feed",
+    heading: "News Feed",
+    description:
+      "In this challenge you're given a news feed with different videos. To improve the UX of your feed, the challenge is to make sure only one video can play at a time.Specifically you'll probably want to tackle the following steps.Finish the NewsFeed component by rendering a VideoItem component for every video in the videos array.Finish the VideoPlaybackProvider component so that playingVideoId and setPlayingVideoId are available throughout the component tree.Finish VideoItem so that the user can play and pause a video, but that when they do, any other video that is currently playing is paused.In my opinion this is the hardest challenge we've had throughout the course so far, so keep that in mind as you wrestle with imposter syndrome and self-doubt 🫶.",
+    problem: ["Allow only one video to play at a time"],
+    learningHeading: "News Feed",
+    note: [
+      "Created a new feed application flow.",
+      "used Context and managed to pause other videos when clicked to play on new video.",
+    ],
+    image: Challange31,
+  },
+  {
+    id: 32,
+    name: "Multistep Form with useReducer",
+    heading: "Multistep Form with useReducer",
+    description:
+      "Given the solution code to the previous 'Multistep Form' challenge you encountered earlier in the course, your job is to refactor the app to use useReducer to manage state instead of useState.",
+    problem: [
+      "Enable a user to transition to the next step",
+      "Enable a user to return to the previous Step",
+      "Keep track of the step and form state correctly",
+      "Reset the form when the user submits it",
+      "Use the useReducer hook to manage the component's state",
+    ],
+    learningHeading: "Multistep Form with useReducer",
+    note: [
+      "Used the useReducer hook to manage the component's state.",
+      "Reset the form when the user submits it",
+    ],
+    image: Challange32,
+  },
+  {
+    id: 33,
+    name: "(pending)Task Manager",
+    heading: "(pending)Task Manager",
+    description:
+      "Given the completed TaskManager component, your challenge is to finish implementing the reducer function so that the user can add, update, and delete tasks.",
+    problem: [
+      "The user should be able to add a new task",
+      "The user should be able to update the status of a task",
+      "The user should be able to delete a task",
+    ],
+    learningHeading: "(pending)Task Manager",
+    note: [
+      "Learned passing down props as objects to a Component.",
+      "Destructuring props and using it in component.",
+      "Creating reusable Component.",
+    ],
+    image: Challange1,
+  },
+  {
+    id: 34,
+    name: "Add To Cart",
+    heading: "Add To Cart",
+    description:
+      "Given the final ShoppingCart component (including all the JSX and event handlers), your job is to finish implementing both the reducer function as well as the calculateTotal function.calculateTotal takes in the cart and should return a single numeric value representing the total cost of all the items in the cart.For the reducer, look at the component to figure out which action types are being dispatched as well as the shape of the action objects.",
+    problem: [
+      "Render the appropriate UI if there are no items in the cart",
+      "Give the user the ability to add items to the shopping cart",
+      "Give the user the ability to remove items from the shopping cart",
+      "Appropriately update the quantity of items in the shopping cart",
+      "Appropriately calculate the total cost of all items in the shopping cart",
+    ],
+    learningHeading: "Add To Cart",
+    note: [
+      "Render the appropriate UI if there are no items in the cart.",
+      "Developed Cart logic.",
+      "Add and remove functionality and calculated Total",
+      "Rendered the UI conditionally.",
+    ],
+    image: Challange34,
+  },
+  {
+    id: 35,
+    name: "Undo Redo",
+    heading: "Undo Redo",
+    description:
+      "The goal of this challenge is, using useReducer, add increment, decrement, undo, and redo functionality to your application. Unlike the other challenges, you'll need to wire up useReducer, the event handlers, and the reducer function yourself - you won't need to touch the JSX though.",
+    problem: [
+      "Clicking increment should increment the counter",
+      "Clicking decrement should decrement the counter",
+      "Clicking undo and redo should undo or redo the previous action",
+    ],
+    learningHeading: "Undo Redo",
+    note: [
+      "handled increment should increment the counter.",
+      "Handled undo and redo should undo or redo the previous action.",
+    ],
+    image: Challange35,
+  },
+  {
+    id: 36,
+    name: "(pending)Localized Primes",
+    heading: "(pending)Localized Primes",
+    description:
+      "Complete the app so that the user can change their locale as well as iterate through every prime number. Take special care to only re-calculate the prime number when the user clicks NEXT PRIME.",
+    problem: [
+      "Increment the prime number count when the button is clicked",
+      "Change the language when the select option is changed",
+      "Memoize nthprime so that it's only re-calculated when count changes",
+    ],
+    learningHeading: "(pending)Localized Primes",
+    note: [
+      "Learned passing down props as objects to a Component.",
+      "Destructuring props and using it in component.",
+      "Creating reusable Component.",
+    ],
+    image: Challange1,
+  },
+  {
+    id: 37,
+    name: "Data Table",
+    heading: "Data Table",
+    description:
+      "Given an application that already has the completed JSX and event handlers for deciding how you should filter and sort the data (searchTerm, sortColumn, and sortOrder), your job is to fetch the data (using the fetchData function), and then, in the most performant way possible, using searchTerm, sortColumn, and sortOrder, update the filteredData and sortedData variables.filteredData should be a memoized array of data that has been filtered based on the searchTerm.sortedData should be a memoized array of filteredData that has been sorted based on the sortColumn and sortOrder.",
+    problem: [
+      "The user can search Pokémon",
+      "The user can sort Pokémon",
+      "The Pokémon data is correctly memoized",
+    ],
+    learningHeading: "Data Table",
+    note: [
+      "Created a Data table filter and sort.",
+      "Added toggle row functionality.",
+      "Added search filter to all columns",
+      "Used memoization for data to filter and sort data based on sort column and order",
+    ],
+    image: Challange37,
+  },
+  {
+    id: 38,
+    name: "Optimizing Renders",
+    heading: "Optimizing Renders",
+    description:
+      "In this challenge you're given two components, ParentComponent and ChildComponent. The goal is to make it so whenever the button in ChildComponent is clicked, you increment count in the ParentComponent. The caveat is that ChildComponent should only ever render once, when the app first loads.",
+    problem: [
+      "Increment count when the button is clicked",
+      "ChildComponent should only render once, when the app first loads",
+    ],
+    learningHeading: "Optimizing Renders",
+    note: [
+      "Incremented count when the button is clicked.",
+      "Render Child component only once when app first loads used memo hook, useCallback, useState, useEffect .",
+    ],
+    image: Challange38,
+  },
   // {
   //   id: 39,
-  //   name: "(pending)Optimizing Renders",
-  //   heading: "(pending)Optimizing Renders",
-  //   description:
-  //     "In this challenge you're given two components, ParentComponent and ChildComponent. The goal is to make it so whenever the button in ChildComponent is clicked, you increment count in the ParentComponent. The caveat is that ChildComponent should only ever render once, when the app first loads.",
-  //   problem: [
-  //     "Increment count when the button is clicked",
-  //     "ChildComponent should only render once, when the app first loads",
-  //   ],
-  //   learningHeading: "(pending)Optimizing Renders",
-  //   note: [
-  //     "Learned passing down props as objects to a Component.",
-  //     "Destructuring props and using it in component.",
-  //     "Creating reusable Component.",
-  //   ],
-  //   image: Challange1,
-  // },
-  // {
-  //   id: 40,
   //   name: "(pending)React Ruler",
   //   heading: "(pending)React Ruler",
   //   description:
@@ -753,6 +738,25 @@ const Snippents = [
   //     "Clean up the ResizeObserver when the component is removed from the DOM",
   //   ],
   //   learningHeading: "(pending)Function Props",
+  //   note: [
+  //     "Learned passing down props as objects to a Component.",
+  //     "Destructuring props and using it in component.",
+  //     "Creating reusable Component.",
+  //   ],
+  //   image: Challange1,
+  // },
+  // {
+  //   id: 40,
+  //   name: "(pending)Flexible Tooltip",
+  //   heading: "(pending)Flexible Tooltip",
+  //   description:
+  //     "You're given an app that... kind of works. The only problem is when you hover over any of the yellow underlined text, the tooltip renders in the wrong position. Your job is to fix the app so that the tooltip renders correctly – either above the text if there's room, or below it if there's not.To do this, you'll want to utilize the browser's getBoundingClientRect API to get position information about specific elements.You won't need to touch any code other than the Tip component.",
+  //   problem: [
+  //     "Position the tooltip above the hovered text if there’s enough room",
+  //     "If there's not enough room above it, and if there's more room below it than above it, position the tooltip below the hovered text",
+  //     "If there's not enough room above it, and there's less room below it, position the tooltip above the hovered text",
+  //   ],
+  //   learningHeading: "(pending)Flexible Tooltip",
   //   note: [
   //     "Learned passing down props as objects to a Component.",
   //     "Destructuring props and using it in component.",

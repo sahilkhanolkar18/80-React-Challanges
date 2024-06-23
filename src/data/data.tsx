@@ -32,6 +32,7 @@ import Challange35 from "../assets/Challange35.png";
 import Challange36 from "../assets/Challange36.png";
 import Challange37 from "../assets/Challange37.png";
 import Challange38 from "../assets/Challange38.png";
+import Challange39 from "../assets/Challange39.png";
 
 const Snippents = [
   {
@@ -727,43 +728,42 @@ const Snippents = [
     ],
     image: Challange38,
   },
-  // {
-  //   id: 39,
-  //   name: "(pending)React Ruler",
-  //   heading: "(pending)React Ruler",
-  //   description:
-  //     "Using the ResizeObserver API, synchronize the width of the ruler (the article element) with your component's width state.",
-  //   problem: [
-  //     "Update the width state when the ruler is resized",
-  //     "Clean up the ResizeObserver when the component is removed from the DOM",
-  //   ],
-  //   learningHeading: "(pending)Function Props",
-  //   note: [
-  //     "Learned passing down props as objects to a Component.",
-  //     "Destructuring props and using it in component.",
-  //     "Creating reusable Component.",
-  //   ],
-  //   image: Challange1,
-  // },
-  // {
-  //   id: 40,
-  //   name: "(pending)Flexible Tooltip",
-  //   heading: "(pending)Flexible Tooltip",
-  //   description:
-  //     "You're given an app that... kind of works. The only problem is when you hover over any of the yellow underlined text, the tooltip renders in the wrong position. Your job is to fix the app so that the tooltip renders correctly – either above the text if there's room, or below it if there's not.To do this, you'll want to utilize the browser's getBoundingClientRect API to get position information about specific elements.You won't need to touch any code other than the Tip component.",
-  //   problem: [
-  //     "Position the tooltip above the hovered text if there’s enough room",
-  //     "If there's not enough room above it, and if there's more room below it than above it, position the tooltip below the hovered text",
-  //     "If there's not enough room above it, and there's less room below it, position the tooltip above the hovered text",
-  //   ],
-  //   learningHeading: "(pending)Flexible Tooltip",
-  //   note: [
-  //     "Learned passing down props as objects to a Component.",
-  //     "Destructuring props and using it in component.",
-  //     "Creating reusable Component.",
-  //   ],
-  //   image: Challange1,
-  // },
+  {
+    id: 39,
+    name: "React Ruler",
+    heading: "React Ruler",
+    description:
+      "Using the ResizeObserver API, synchronize the width of the ruler (the article element) with your component's width state.",
+    problem: [
+      "Update the width state when the ruler is resized",
+      "Clean up the ResizeObserver when the component is removed from the DOM",
+    ],
+    learningHeading: "Function Props",
+    note: [
+      "Created a resizable ruler.",
+      "Used useLayoutEffect hook to calculate width before the view is loaded.",
+    ],
+    image: Challange39,
+  },
+  {
+    id: 40,
+    name: "(pending)Flexible Tooltip",
+    heading: "(pending)Flexible Tooltip",
+    description:
+      "You're given an app that... kind of works. The only problem is when you hover over any of the yellow underlined text, the tooltip renders in the wrong position. Your job is to fix the app so that the tooltip renders correctly - either above the text if there's room, or below it if there's not.To do this, you'll want to utilize the browser's getBoundingClientRect API to get position information about specific elements.You won't need to touch any code other than the Tip component.",
+    problem: [
+      "Position the tooltip above the hovered text if there's enough room",
+      "If there's not enough room above it, and if there's more room below it than above it, position the tooltip below the hovered text",
+      "If there's not enough room above it, and there's less room below it, position the tooltip above the hovered text",
+    ],
+    learningHeading: "(pending)Flexible Tooltip",
+    note: [
+      "Learned passing down props as objects to a Component.",
+      "Destructuring props and using it in component.",
+      "Creating reusable Component.",
+    ],
+    image: Challange1,
+  },
 ];
 
 export default Snippents;

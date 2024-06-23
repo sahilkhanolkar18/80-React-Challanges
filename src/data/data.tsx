@@ -23,10 +23,13 @@ import Challange26 from "../assets/Challange26.png";
 import Challange27 from "../assets/Challange27.png";
 import Challange28 from "../assets/Challange28.png";
 import Challange29 from "../assets/Challange29.png";
+import Challange30 from "../assets/Challange30.png";
 import Challange31 from "../assets/Challange31.png";
 import Challange32 from "../assets/Challange32.png";
+import Challange33 from "../assets/Challange33.png";
 import Challange34 from "../assets/Challange34.png";
 import Challange35 from "../assets/Challange35.png";
+import Challange36 from "../assets/Challange36.png";
 import Challange37 from "../assets/Challange37.png";
 import Challange38 from "../assets/Challange38.png";
 
@@ -516,16 +519,15 @@ const Snippents = [
   },
   {
     id: 27,
-    name: "(pending)Follow the Leader",
-    heading: "(pending)Follow the Leader",
+    name: "Follow the Leader",
+    heading: "Follow the Leader",
     description:
       "The concept is simple, animate the center of the box to the coordinates that the user clicks.To do this, you'll need to update the position array to include the new x and y positions of where the box should transform to.",
     problem: ["Animate the box to the coordinates that the user clicks"],
-    learningHeading: "(pending)Follow the Leader",
+    learningHeading: "Follow the Leader",
     note: [
-      "Learned passing down props as objects to a Component.",
-      "Destructuring props and using it in component.",
-      "Creating reusable Component.",
+      "Calculated x and y positions.",
+      "And animated the box to move where you click.",
     ],
     image: Challange27,
   },
@@ -565,18 +567,17 @@ const Snippents = [
   },
   {
     id: 30,
-    name: "(pending)Tabs",
-    heading: "(pending)Tabs",
+    name: "Tabs",
+    heading: "Tabs",
     description:
       "Given the completed JSX, finish the app so that the correct tab content is shown when a tab is clicked.This challenge is deliberately vague. You'll need to carefully examine the final app as well as each component and what props it receives to figure out how to complete the challenge.Once finished, you should have a working tabs implementation that is hyper flexible and not coupled at all to the current layout of the app.",
     problem: ["Show the correct tab content when a tab is clicked"],
-    learningHeading: "(pending)Tabs",
+    learningHeading: "Tabs",
     note: [
-      "Learned passing down props as objects to a Component.",
-      "Destructuring props and using it in component.",
-      "Creating reusable Component.",
+      "Created a simple reusable Tabs component.",
+      "Used context to manage the active tab.",
     ],
-    image: Challange1,
+    image: Challange30,
   },
   {
     id: 31,
@@ -614,8 +615,8 @@ const Snippents = [
   },
   {
     id: 33,
-    name: "(pending)Task Manager",
-    heading: "(pending)Task Manager",
+    name: "Task Manager",
+    heading: "Task Manager",
     description:
       "Given the completed TaskManager component, your challenge is to finish implementing the reducer function so that the user can add, update, and delete tasks.",
     problem: [
@@ -623,13 +624,12 @@ const Snippents = [
       "The user should be able to update the status of a task",
       "The user should be able to delete a task",
     ],
-    learningHeading: "(pending)Task Manager",
+    learningHeading: "Task Manager",
     note: [
-      "Learned passing down props as objects to a Component.",
-      "Destructuring props and using it in component.",
-      "Creating reusable Component.",
+      "With Reducer hooks created a simple task manager.",
+      "User can create add, delete and update the task status.",
     ],
-    image: Challange1,
+    image: Challange33,
   },
   {
     id: 34,
@@ -673,8 +673,8 @@ const Snippents = [
   },
   {
     id: 36,
-    name: "(pending)Localized Primes",
-    heading: "(pending)Localized Primes",
+    name: "Localized Primes",
+    heading: "Localized Primes",
     description:
       "Complete the app so that the user can change their locale as well as iterate through every prime number. Take special care to only re-calculate the prime number when the user clicks NEXT PRIME.",
     problem: [
@@ -682,13 +682,13 @@ const Snippents = [
       "Change the language when the select option is changed",
       "Memoize nthprime so that it's only re-calculated when count changes",
     ],
-    learningHeading: "(pending)Localized Primes",
+    learningHeading: "Localized Primes",
     note: [
-      "Learned passing down props as objects to a Component.",
-      "Destructuring props and using it in component.",
-      "Creating reusable Component.",
+      "Created a prime number calculator and added language filter.",
+      "user can change their locale as well as iterate through every prime number.",
+      "Saved the re-calculation of prime number when the user clicks NEXT PRIME with useMemo hook.",
     ],
-    image: Challange1,
+    image: Challange36,
   },
   {
     id: 37,

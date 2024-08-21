@@ -29,7 +29,6 @@ const Challange3 = () => {
 
   const generateRandomBoolean = () => {
     const randomValue = Math.random() < 0.5;
-    console.log(randomValue);
     setIsLactoseTolerant(randomValue);
   };
 

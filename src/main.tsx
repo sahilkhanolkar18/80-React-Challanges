@@ -17,6 +17,10 @@ const router = createBrowserRouter([
     path: "/:id",
     element: <ChallangeTemplate />,
   },
+  // {
+  //   path: "/test",
+  //   element: <Test />,
+  // },
   {
     path: "*",
     element: <NotFound />,

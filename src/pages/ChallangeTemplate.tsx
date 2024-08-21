@@ -101,7 +101,7 @@ const ChallangeTemplate = () => {
         </button>
       </div>
       {activeTab === "problem" && (
-        <div className="mx-[20px]  mt-6 w-[1000px]">
+        <div className="mx-[20px]  mt-6 w-[1000px] ml-8">
           <h1 className="font-semibold text-[32px] text-[#343a40]">
             {/*@ts-ignore*/}
             {Snippents[id - 1]?.heading}

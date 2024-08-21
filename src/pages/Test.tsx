@@ -1,7 +1,7 @@
 // SnippetComponent.js
 
 const Test = () => {
-  return <div className="snippet-container">Test</div>;
+  return <div className="popper" />;
 };
 
 export default Test;

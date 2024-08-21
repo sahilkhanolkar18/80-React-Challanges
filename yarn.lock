@@ -1868,6 +1868,11 @@
     "@babel/runtime" "^7.18.3"
     "react-is" "^18.2.0"
 
+"react-battery-gauge@^1.0.7":
+  "integrity" "sha512-4T2w5SX0Jg6RfstwlhYuLUioKY8qdQ9owTxjJn5opNPKDSbt09KV97Qv3Gs4quGPei1/h+ewkjEExDrBbIOzyg=="
+  "resolved" "https://registry.npmjs.org/react-battery-gauge/-/react-battery-gauge-1.0.7.tgz"
+  "version" "1.0.7"
+
 "react-code-blocks@^0.1.6":
   "integrity" "sha512-ENNuxG07yO+OuX1ChRje3ieefPRz6yrIpHmebQlaFQgzcAHbUfVeTINpOpoI9bSRSObeYo/OdHsporeToZ7fcg=="
   "resolved" "https://registry.npmjs.org/react-code-blocks/-/react-code-blocks-0.1.6.tgz"

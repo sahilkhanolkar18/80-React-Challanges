@@ -7,7 +7,7 @@ import { ListIcon, GridIcon, Chevron } from "../assets/svgIcons";
 
 const Home = () => {
   const [isGridView, setIsGridView] = useState(false);
-  const [sortOrder, setSortOrder] = useState("asc");
+  const [sortOrder, setSortOrder] = useState("desc");
 
   const handleSort = () => {
     setSortOrder(sortOrder === "asc" ? "desc" : "asc");

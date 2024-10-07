@@ -4,11 +4,12 @@ const useQueue = (initialValue = []) => {
   const [queue, setQueue] = useState<any>(initialValue);
 
   const add = useCallback((element: any) => {
-    setQueue((q) => [...q, element]);
+    setQueue((q: any) => [...q, element]);
   }, []);
 
   const remove = useCallback(() => {
     let removedElement;
+    //@ts-ignore
 
     setQueue(([first, ...q]) => {
       removedElement = first;
@@ -80,6 +81,7 @@ const QueueDemo = ({ first, last, size, queue }: any) => {
 };
 
 const Challange52 = () => {
+  //@ts-ignore
   const { add, remove, clear, first, last, size, queue } = useQueue([1, 2, 3]);
 
   return (

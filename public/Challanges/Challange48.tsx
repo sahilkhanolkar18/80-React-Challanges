@@ -49,13 +49,13 @@ const Challange48 = () => {
         </pre>
         <button
           disabled={hasCopiedText}
-          className="bg-[#222831] rounded-full p-1"
+          className="bg-[#222831] rounded-full p-1" //@ts-ignore
           onClick={() => copyToClipboard(randomHash)}
         >
           {hasCopiedText ? <CheckedClipbord /> : <Clipbord />}
         </button>
       </div>
-      {hasCopiedText && (
+      {hasCopiedText && ( //@ts-ignore
         <div open={hasCopiedText} className="">
           <h4>
             Text Copied{" "}

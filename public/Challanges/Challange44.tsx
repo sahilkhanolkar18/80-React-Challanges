@@ -7,22 +7,31 @@ const Challange44 = () => {
     <section className="h-full flex flex-col justify-center text-[white] items-center gap-2">
       <h1 className="font-semibold">UseToggle</h1>
       <div className="flex gap-4 text-[orange] underline">
-        <button
+        <button //@ts-ignore
           disabled={on}
-          className={on ? "text-[grey] underline" : ""}
+          className={on ? "text-[grey] underline" : ""} //@ts-ignore
           onClick={() => toggle(true)}
         >
           Turn On
         </button>
         <button
           disabled={!on}
-          className={!on ? "text-[grey] underline" : ""}
+          className={!on ? "text-[grey] underline" : ""} //@ts-ignore
           onClick={() => toggle(false)}
         >
           Turn Off
         </button>
-        <button onClick={toggle}>Toggle</button>
-        <button onClick={() => toggle("nope")}>(Also toggles)</button>
+        <button //@ts-ignore
+          onClick={toggle}
+        >
+          Toggle
+        </button>
+
+        <button //@ts-ignore
+          onClick={() => toggle("nope")}
+        >
+          (Also toggles)
+        </button>
       </div>
       <ToggleDemo on={on} toggle={toggle} />
     </section>

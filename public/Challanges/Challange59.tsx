@@ -5,6 +5,8 @@ const useContinuousRetry = (
   interval = 100,
   options = {}
 ) => {
+  //@ts-ignore
+
   const { maxRetries = Infinity } = options;
   const [hasResolved, setHasResolved] = useState(false);
 

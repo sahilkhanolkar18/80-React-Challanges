@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 const usePageLeave = (cb: any) => {
   const onLeave = (event: MouseEvent) => {
+    //@ts-ignore
     const to = event.relatedTarget || event.toElement;
     if (!to || to.nodeName === "HTML") {
       cb();

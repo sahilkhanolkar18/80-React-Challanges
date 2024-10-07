@@ -7,6 +7,7 @@ const LimitedTextInput = ({ characterLimit }: any) => {
 
   const remainingCharacters = characterLimit - inputValue.length;
   const limitExceeded = remainingCharacters < 0;
+  const thresholdMet = inputValue.length >= characterLimit;
 
   const handleToggleVisibility = () => {
     setIsInputValueVisible(!isInputValueVisible);
@@ -19,11 +20,10 @@ const LimitedTextInput = ({ characterLimit }: any) => {
   const handleSubmit = (e: any) => {
     e.preventDefault();
 
-    if (limitExceeded) {
-      alert("The input exceeds the character limit. Please shorten your text.");
+    if (thresholdMet) {
+      alert("Password submitted");
     } else {
-      setInputValue("");
-      alert("Thanks for your submission");
+      alert("You need a longer password");
     }
   };
 
@@ -39,7 +39,7 @@ const LimitedTextInput = ({ characterLimit }: any) => {
         <div className="text-sm text-[white] flex justify-between w-[100%]">
           <p>Password:</p>
           <p>
-            <span className={limitExceeded ? "error" : "no-error"}>
+            <span className={limitExceeded ? "text-[red]" : "text-[#50c550]"}>
               {remainingCharacters}
             </span>
           </p>

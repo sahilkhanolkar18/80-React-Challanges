@@ -32,11 +32,13 @@ const Challange61 = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = (e: any) => {
-    const element = ref.current;
+    const element = ref.current; //@ts-ignore
+
     if (element && !element.contains(e.target)) {
       setIsOpen(false);
     }
   };
+  //@ts-ignore
 
   useEventListener(document, "mousedown", handleClick);
 

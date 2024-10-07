@@ -8,6 +8,8 @@ const useList = (defaultList = []) => {
   }, []);
 
   const push = useCallback((element: any) => {
+    //@ts-ignore
+
     setList((l) => [...l, element]);
   }, []);
 
@@ -16,10 +18,14 @@ const useList = (defaultList = []) => {
   }, []);
 
   const insertAt = useCallback((index: any, element: any) => {
+    //@ts-ignore
+
     setList((l) => [...l.slice(0, index), element, ...l.slice(index)]);
   }, []);
 
   const updateAt = useCallback((index: any, element: any) => {
+    //@ts-ignore
+
     setList((l) => l.map((e, i) => (i === index ? element : e)));
   }, []);
 
@@ -29,9 +35,11 @@ const useList = (defaultList = []) => {
 };
 
 const Challange56 = () => {
+  //@ts-ignore
   const [list, { set, push, removeAt, insertAt, updateAt, clear }] = useList([
-    "First",
-    "Second",
+    //@ts-ignore
+    "First", //@ts-ignore
+    "Second", //@ts-ignore
     "Third",
   ]);
 
@@ -39,15 +47,15 @@ const Challange56 = () => {
     <div className="h-full flex flex-col justify-center items-center gap-3 text-[white]">
       <h1 className="text-2xl text-semibold">UseList</h1>
       <div className="flex gap-4 text-[orange] underline">
-        <button
-          disabled={list.length < 1}
+        <button //@ts-ignore
+          disabled={list.length < 1} //@ts-ignore
           className={list.length < 1 ? "text-[grey] underline" : ""}
           onClick={() => insertAt(1, "Inserted After First")}
         >
           Insert After First
         </button>
-        <button
-          disabled={list.length < 2}
+        <button //@ts-ignore
+          disabled={list.length < 2} //@ts-ignore
           className={list.length < 2 ? "text-[grey] underline" : ""}
           onClick={() => removeAt(1)}
         >

@@ -97,7 +97,7 @@ const Challange60 = () => {
   const removeTodo = (id: any) => {
     set({
       ...state,
-      items: state.items.filter((item) => item.id !== id),
+      items: state.items.filter((item: any) => item.id !== id),
     });
   };
 

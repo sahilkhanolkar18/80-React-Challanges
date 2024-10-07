@@ -10,18 +10,23 @@ const useFavicon = (url: any) => {
   useEffect(() => {
     let link = document.querySelector(`link[rel~="icon"]`);
     if (!link) {
-      link = document.createElement("link");
-      link.type = "image/x-icon";
+      link = document.createElement("link"); //@ts-ignore
+
+      link.type = "image/x-icon"; //@ts-ignore
+
       link.href = url;
       document.head.appendChild(link);
     } else {
+      //@ts-ignore
+
       link.href = url;
     }
   }, [url]);
 };
 
 const Challange47 = () => {
-  const [id, setId] = useState("uidotdev");
+  const [id, setId] = useState("uidotdev"); //@ts-ignore
+
   useFavicon(faviconMap[id]);
   return (
     <section className="h-full text-[white] flex flex-col items-center justify-center gap-3">

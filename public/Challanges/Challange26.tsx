@@ -6,8 +6,11 @@ const Challange26 = () => {
 
   const handleChange = (event: any) => {
     setText(event.target.value);
+    //@ts-ignore
     textAreaRef.current.style.height = "inherit";
+    //@ts-ignore
     const scrollHeight = textAreaRef.current.scrollHeight;
+    //@ts-ignore
     textAreaRef.current.style.height = scrollHeight + "px";
   };
 

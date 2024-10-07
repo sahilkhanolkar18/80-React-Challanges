@@ -29,6 +29,7 @@ const useFetch = (url: any, options: any) => {
     let ignore = false;
 
     const fetchData = async () => {
+      //@ts-ignore
       const cachedResponse = cacheRef.current[url];
 
       if (cachedResponse) {
@@ -45,7 +46,7 @@ const useFetch = (url: any, options: any) => {
           throw new Error(res.statusText);
         }
 
-        const json = await res.json();
+        const json = await res.json(); //@ts-ignore
         cacheRef.current[url] = json;
 
         if (!ignore) {
@@ -99,7 +100,7 @@ const Card = ({ data, loading, error }: any) => {
 
 const Challange76 = () => {
   const [count, setCount] = useState(1);
-
+  //@ts-ignore
   const { error, data } = useFetch(
     `https://pokeapi.co/api/v2/pokemon/${count}`
   );

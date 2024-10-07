@@ -75,7 +75,7 @@ const Challange20 = () => {
         </div>
       </header>
 
-      {data && !isLoading && (
+      {data && !isLoading && !error && (
         <article className=" px-6 pt-2 rounded-lg shadow-lg">
           <h2 className="text-[orange] text-2xl font-semibold mb-4 ">
             {data.name}

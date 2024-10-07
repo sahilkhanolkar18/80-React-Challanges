@@ -14,7 +14,9 @@ const Challange11 = () => {
   return (
     <main
       className={`h-[100%] ${
-        mode === "dark" ? "bg-[#222831]" : "bg-[white]"
+        mode === "dark"
+          ? "bg-[#222831]"
+          : "bg-[white] border border[#6886b3] rounded-sm"
       } flex justify-center items-center`}
     >
       {mode === "light" ? (

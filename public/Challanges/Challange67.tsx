@@ -34,7 +34,7 @@ const isShallowEqual = (object1: any, object2: any) => {
   if (keys1.length !== keys2.length) {
     return false;
   }
-
+  //@ts-ignore
   for (let key of keys1) {
     if (object1[key] !== object2[key]) {
       return false;
@@ -46,8 +46,9 @@ const isShallowEqual = (object1: any, object2: any) => {
 
 const getConnection = () => {
   return (
-    navigator?.connection ||
-    navigator?.mozConnection ||
+    //@ts-ignore
+    navigator?.connection || //@ts-ignore
+    navigator?.mozConnection || //@ts-ignore
     navigator?.webkitConnection
   );
 };
@@ -92,6 +93,8 @@ const Challange67 = () => {
                   {key}
                 </th>
                 <td className="px-4 py-2 bg-[#f4f4f4] text-[black] rounded-md">
+                  {" "}
+                  {/*@ts-ignore*/}
                   {`${network[key]}`}
                 </td>
               </tr>

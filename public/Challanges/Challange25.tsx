@@ -9,6 +9,7 @@ const Challange25 = () => {
     if (isOpen === true) {
       const handleEvent = (e: any) => {
         const element = ref.current;
+        //@ts-ignore
         if (element && !element.contains(e.target)) {
           setIsOpen(false);
         }

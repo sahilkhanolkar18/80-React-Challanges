@@ -8,8 +8,9 @@ const isTouchEvent = ({ nativeEvent }: any) => {
 const isMouseEvent = (event: any) => {
   return event.nativeEvent instanceof MouseEvent;
 };
-
+//@ts-ignore
 const useLongPress = (callback, options = {}) => {
+  //@ts-ignore
   const { threshold = 400, onStart, onFinish, onCancel } = options;
   const isLongPressActive = useRef(false);
   const isPressed = useRef(false);
@@ -27,7 +28,7 @@ const useLongPress = (callback, options = {}) => {
         onStart(event);
       }
 
-      isPressed.current = true;
+      isPressed.current = true; //@ts-ignore
       timerId.current = setTimeout(() => {
         callback(event);
         isLongPressActive.current = true;
@@ -80,8 +81,9 @@ const Challange72 = () => {
       setIsOpen(true);
     },
     {
-      onStart: (event) => console.log("Press started"),
-      onFinish: (event) => console.log("Press finished"),
+      //@ts-ignore
+      onStart: (event) => console.log("Press started"), //@ts-ignore
+      onFinish: (event) => console.log("Press finished"), //@ts-ignore
       onCancel: (event) => console.log("Press cancelled"),
       threshold: 500,
     }

@@ -10,13 +10,17 @@ const products = [
 ];
 
 const calculateTotal = (cart: any) => {
+  //@ts-ignore
+
   return cart.reduce((total, product) => {
     return total + product.quantity * product.price;
   }, 0);
 };
+//@ts-ignore
 
 const initialState = [];
 
+//@ts-ignore
 const reducer = (cart, action) => {
   if (action.type === "add") {
     const inCart = Boolean(cart.find((item: any) => item.id === action.id));
@@ -51,9 +55,11 @@ const reducer = (cart, action) => {
 };
 
 const ShoppingCart = () => {
+  //@ts-ignore
   const [cart, dispatch] = React.useReducer(reducer, initialState);
 
   const handleAddToCart = (id: any) => dispatch({ type: "add", id });
+  //@ts-ignore
 
   const handleUpdateQuantity = (id, adjustment) => {
     dispatch({

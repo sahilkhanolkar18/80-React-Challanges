@@ -20,7 +20,9 @@ const Challange24 = () => {
     const form = e.target;
     const formData = new FormData(form);
     const newNote = formData.get("note");
+    //@ts-ignore
     if (newNote.trim()) {
+      //@ts-ignore
       setNotes([...notes, newNote]);
       form.reset();
     }

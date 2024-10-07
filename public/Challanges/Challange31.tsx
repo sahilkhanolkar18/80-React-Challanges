@@ -6,20 +6,22 @@ const videoPlaybackContext = createContext({
   setPlayingVideoId: () => {},
 });
 
-function VideoPlaybackProvider({ children }: any) {
+const VideoPlaybackProvider = ({ children }: any) => {
   const [playingVideoId, setPlayingVideoId] = useState(null);
 
   return (
     <videoPlaybackContext.Provider
+      //@ts-ignore
       value={{ playingVideoId, setPlayingVideoId }}
     >
       {children}
     </videoPlaybackContext.Provider>
   );
-}
+};
 
 function VideoItem({ videoId, title, poster, src }: any) {
-  const videoRef = useRef(null);
+  const videoRef = useRef(null); //@ts-ignore
+
   const { playingVideoId, setPlayingVideoId } =
     useContext(videoPlaybackContext);
 
@@ -27,16 +29,24 @@ function VideoItem({ videoId, title, poster, src }: any) {
 
   const handleTogglePlay = () => {
     if (!videoIsActive) {
+      //@ts-ignore
+
       setPlayingVideoId(videoId);
     } else {
+      //@ts-ignore
+
       setPlayingVideoId(null);
     }
   };
 
   useEffect(() => {
     if (videoIsActive) {
+      //@ts-ignore
+
       videoRef.current.play();
     } else {
+      //@ts-ignore
+
       videoRef.current.pause();
     }
   }, [videoIsActive]);

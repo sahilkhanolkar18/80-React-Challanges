@@ -15,6 +15,7 @@ const useIdle = (ms = 1000 * 20) => {
   const [idle, setIdle] = React.useState(false);
 
   React.useEffect(() => {
+    //@ts-ignore
     let timeoutId;
 
     const handleTimeout = () => {
@@ -23,7 +24,7 @@ const useIdle = (ms = 1000 * 20) => {
 
     const handleEvent = throttle(() => {
       setIdle(false);
-
+      //@ts-ignore
       window.clearTimeout(timeoutId);
       timeoutId = window.setTimeout(handleTimeout, ms);
     }, 500);
@@ -51,7 +52,7 @@ const useIdle = (ms = 1000 * 20) => {
       window.removeEventListener("keydown", handleEvent);
       window.removeEventListener("touchstart", handleEvent);
       window.removeEventListener("wheel", handleEvent);
-      document.removeEventListener("visibilitychange", handleVisibilityChange);
+      document.removeEventListener("visibilitychange", handleVisibilityChange); //@ts-ignore
       window.clearTimeout(timeoutId);
     };
   }, [ms]);

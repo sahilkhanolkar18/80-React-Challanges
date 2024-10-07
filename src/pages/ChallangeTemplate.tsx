@@ -25,7 +25,7 @@ const ChallangeTemplate = () => {
       if (id) {
         try {
           const ImportedComponent = await import(
-            `../components/Challange${id}.tsx`
+            `../challenges/Challange${id}.tsx`
           );
           setComponent(() => ImportedComponent.default);
         } catch (err) {

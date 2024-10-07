@@ -3,16 +3,20 @@ import { useState, useEffect, useRef, useCallback } from "react";
 function getRandomNumber(min: any, max: any) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+//@ts-ignore
 
 const useRandomInterval = (cb, { minDelay, maxDelay }) => {
   const timeoutId = useRef(null);
 
   const handleClearTimeout = useCallback(() => {
+    //@ts-ignore
+
     window.clearTimeout(timeoutId.current);
   }, []);
 
   const tick = useCallback(() => {
-    const interval = getRandomNumber(minDelay, maxDelay);
+    const interval = getRandomNumber(minDelay, maxDelay); //@ts-ignore
+
     timeoutId.current = window.setTimeout(() => {
       cb();
       tick();
@@ -32,6 +36,8 @@ const Challange62 = () => {
 
   const clear = useRandomInterval(
     () => {
+      //@ts-ignore
+
       setKey(Math.random());
     },
     { minDelay: 50, maxDelay: 1000 }

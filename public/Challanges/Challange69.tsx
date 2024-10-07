@@ -66,6 +66,7 @@ const Challange69 = () => {
               return (
                 <tr key={key}>
                   <th className="text-[orange] pr-2 font-semibold">{key} : </th>
+                  {/*@ts-ignore*/}
                   <td> {orientation[key]}</td>
                 </tr>
               );

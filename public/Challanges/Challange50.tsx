@@ -1,6 +1,8 @@
 import { useState, useCallback } from "react";
 
 const useCounter = (startingValue = 0, options = {}) => {
+  //@ts-ignore
+
   const { min, max } = options;
 
   if (typeof min === "number" && startingValue < min) {

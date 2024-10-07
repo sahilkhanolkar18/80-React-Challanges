@@ -52,12 +52,12 @@ const Challange21 = () => {
     };
   }, [query, tag, page]);
 
-  const handleSearch = (e) => {
+  const handleSearch = (e: any) => {
     setQuery(e.target.value);
     setPage(0);
   };
 
-  const handleTag = (e) => {
+  const handleTag = (e: any) => {
     setTag(e.target.value);
     setPage(0);
   };

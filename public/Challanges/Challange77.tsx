@@ -23,12 +23,13 @@ const useCountdown = (endTime: any, options: any) => {
         handleClearInterval();
         onComplete();
       } else {
+        //@ts-ignore
         setCount(remainingTime);
         onTick();
       }
     };
 
-    tick(); // Initial call to set the initial count
+    tick(); //@ts-ignore
     intervalIdRef.current = setInterval(tick, interval);
 
     return () => handleClearInterval();

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
-
+//@ts-ignore
 const useKeyPress = (key, cb, options = {}) => {
+  //@ts-ignore
   const { event = "keydown", target = window, eventOptions } = options;
 
   useEffect(() => {

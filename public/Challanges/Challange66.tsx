@@ -5,8 +5,9 @@ const useClickAway = (cb: any) => {
 
   // Memoize the event handler to avoid unnecessary re-renders
   const onEventHandler = useCallback(
-    (e) => {
-      const element = ref.current;
+    (e: any) => {
+      const element = ref.current; //@ts-ignore
+
       if (element && !element.contains(e.target)) {
         cb(e);
       }

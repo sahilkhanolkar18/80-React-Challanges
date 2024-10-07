@@ -1,6 +1,7 @@
 import { useState, useLayoutEffect, useRef } from "react";
 
 const Tip = ({ targetRef, children }: any) => {
+  //@ts-ignore
   const [tipLayout, setTipLayout] = useState({
     style: {},
     position: "top",
@@ -9,6 +10,7 @@ const Tip = ({ targetRef, children }: any) => {
   const tipRef = useRef(null);
 
   useLayoutEffect(() => {
+    //@ts-ignore
     const tipRect = tipRef.current.getBoundingClientRect();
     const targetRect = targetRef.current.getBoundingClientRect();
 
@@ -60,7 +62,7 @@ const Tooltip = ({ tip, children }: any) => {
 
 const Challange40 = () => {
   return (
-    <main className="h-full text-[white] relative">
+    <main className="h-full text-[white] relative mt-[90px]">
       <section className="flex flex-col justify-center items-center gap-3">
         <div className=" w-[65%]">
           <p>
@@ -163,6 +165,7 @@ const Challange40 = () => {
             .
           </p>
         </div>
+        <div className="mb-[100px]"></div>
       </section>
     </main>
   );

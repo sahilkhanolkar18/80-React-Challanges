@@ -36,6 +36,7 @@ const useLocalStorage = (key: any, initialValue: any) => {
   const setState = useCallback(
     (v: any) => {
       try {
+        //@ts-ignore
         const nextState = typeof v === "function" ? v(JSON.parse(store)) : v;
 
         if (nextState === undefined || nextState === null) {
@@ -57,7 +58,7 @@ const useLocalStorage = (key: any, initialValue: any) => {
   }, [key, initialValue]);
 
   return [store ? JSON.parse(store) : initialValue, setState];
-};
+}; //@ts-ignore
 
 const createDrawing = (canvas, drawing, saveDrawing) => {
   if (!canvas) return;
@@ -77,7 +78,7 @@ const createDrawing = (canvas, drawing, saveDrawing) => {
   }
 
   // Start drawing
-  const startDrawing = (e) => {
+  const startDrawing = (e: any) => {
     isDrawing = true;
     [lastX, lastY] = [e.offsetX, e.offsetY];
   };
@@ -92,7 +93,7 @@ const createDrawing = (canvas, drawing, saveDrawing) => {
   };
 
   // Drawing on the canvas
-  const draw = (e) => {
+  const draw = (e: any) => {
     if (!isDrawing) return;
     ctx.lineWidth = 5;
     ctx.lineJoin = "round";
@@ -143,7 +144,7 @@ const Challange79 = () => {
           ref={ref}
           width={300}
           height={300}
-          className="bg-[#7A1CAC] rounded"
+          className="bg-[#7A1CAC] rounded cursor-crosshair"
         />
         <figcaption>(draw something)</figcaption>
       </figure>

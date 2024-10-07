@@ -33,10 +33,12 @@ const LanguageProvider = ({ children }: any) => {
   };
 
   const translation = (key: any) => {
+    //@ts-ignore
     return translations[language]?.[key] || key;
   };
 
   return (
+    //@ts-ignore
     <languageContext.Provider value={{ language, changeLanguage, translation }}>
       {children}
     </languageContext.Provider>
@@ -50,7 +52,8 @@ const LanguageSwitcher = () => {
     <div>
       <select
         value={language}
-        onChange={(e) => changeLanguage(e.target.value)}
+        //@ts-ignore
+        onChange={(e: any) => changeLanguage(e.target.value)}
         className="px-2 py-1 bg-[black] rounded-sm w-[90px] mt-1 mb-2 text-[orange] border border-[orange] text-sm"
       >
         <option value="en">English</option>

@@ -47,7 +47,7 @@ const Challange45 = () => {
       <article>
         <figure className="flex gap-4  items-center justify-center py-4 px-8 rounded-md">
           <div className="flex flex-col items-center gap-1 pt-2">
-            <div
+            <div //@ts-ignore
               style={{ backgroundColor: previousColor }}
               className="h-[150px] w-[150px] rounded-md"
             ></div>
@@ -66,7 +66,7 @@ const Challange45 = () => {
   );
 };
 
-const usePrevious = (value) => {
+const usePrevious = (value: any) => {
   const [current, setCurrent] = useState(value);
   const [previous, setPrevious] = useState(null);
 

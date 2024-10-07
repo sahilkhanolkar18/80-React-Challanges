@@ -12,6 +12,7 @@ const useBattery = () => {
   });
 
   useEffect(() => {
+    //@ts-ignore
     if (!navigator.getBattery) {
       setState((s) => ({
         ...s,
@@ -20,20 +21,20 @@ const useBattery = () => {
       }));
       return;
     }
-
+    //@ts-ignore
     let battery = null;
 
     const handleChange = () => {
       setState({
         supported: true,
-        loading: false,
-        level: battery.level,
-        charging: battery.charging,
-        chargingTime: battery.chargingTime,
+        loading: false, //@ts-ignore
+        level: battery.level, //@ts-ignore
+        charging: battery.charging, //@ts-ignore
+        chargingTime: battery.chargingTime, //@ts-ignore
         dischargingTime: battery.dischargingTime,
       });
     };
-
+    //@ts-ignore
     navigator.getBattery().then((b) => {
       battery = b;
       handleChange();
@@ -44,6 +45,7 @@ const useBattery = () => {
     });
 
     return () => {
+      //@ts-ignore
       if (battery) {
         battery.removeEventListener("levelchange", handleChange);
         battery.removeEventListener("chargingchange", handleChange);
@@ -87,7 +89,7 @@ const Challange70 = () => {
     <div className="h-full flex flex-col justify-center items-center gap-3 text-[white]">
       <h1 className="text-2xl font-bold">useBattery</h1>
       {!loading ? (
-        <Battery
+        <Battery //@ts-ignore
           level={level * 100}
           charging={charging}
           chargingTime={chargingTime}

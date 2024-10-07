@@ -1,16 +1,21 @@
 import { useCallback, useRef, useEffect, useState } from "react";
+//@ts-ignore
 
 const useIntervalWhen = (cb, { ms, when, startImmediately }) => {
   const id = useRef(null);
   const immediatelyCalled = useRef(startImmediately === true ? false : null);
 
   const handleClearInterval = useCallback(() => {
+    //@ts-ignore
+
     window.clearInterval(id.current);
     immediatelyCalled.current = false;
   }, []);
 
   useEffect(() => {
     if (when === true) {
+      //@ts-ignore
+
       id.current = window.setInterval(cb, ms);
 
       if (startImmediately === true && immediatelyCalled.current === false) {

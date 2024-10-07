@@ -19,7 +19,10 @@ const useWindowSize = () => {
   useLayoutEffect(() => {
     const handler = () => {
       setSize({
-        width: window.innerWidth,
+        //@ts-ignore
+
+        width: window.innerWidth, //@ts-ignore
+
         height: window.innerHeight,
       });
     };

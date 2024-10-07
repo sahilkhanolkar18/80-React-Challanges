@@ -12,7 +12,7 @@ const initialState = {
   },
 };
 
-const reducer = (state, action) => {
+const reducer = (state: any, action: any) => {
   if (action.type === "next_step") {
     return { ...state, currentStep: state.currentStep + 1 };
   } else if (action.type === "prev_step") {

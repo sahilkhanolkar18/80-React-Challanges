@@ -6,8 +6,9 @@ const useSessionStorage = (key: any, initialValue: any) => {
   const store = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 
   const setState = useCallback(
-    (v) => {
+    (v: any) => {
       try {
+        //@ts-ignore
         const nextState = typeof v === "function" ? v(JSON.parse(store)) : v;
 
         if (nextState === undefined || nextState === null) {

@@ -182,16 +182,16 @@ const ChallengeTemplate = () => {
           <div className="w-[45%] ml-[53%] h-[75vh] overflow-y-auto ">
             <div className="">
               <div className="mx-[20px] mt-6 max-w-[700px]">
-                <h1 className="font-semibold text-[28px] text-gray-700">
+                <h1 className="font-semibold text-md text-gray-700 ">
                   {/*@ts-ignore*/}
-                  What I learned ?
+                  <span className="underline">What I learned </span>?
                 </h1>
-                <h1 className="font-semibold text-[16px] text-gray-700 mt-3">
+
+                <h1 className="font-semibold text-2xl text-gray-700 mt-3">
                   {/*@ts-ignore*/}
                   {Snippents[id - 1]?.learningHeading}
                 </h1>
                 {/*@ts-ignore*/}
-
                 <ul className="list-disc pl-5 flex flex-col gap-1 mt-3">
                   {/*@ts-ignore*/}
                   {Snippents[id - 1]?.note.map((i) => {

@@ -2,7 +2,7 @@ import Home from "@pages/Home.tsx";
 import "@styles/index.css";
 import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import ChallangeTemplate from "./pages/ChallangeTemplate";
+import ChallengeTemplate from "./pages/ChallengeTemplate";
 import NotFound from "./components/ErrorPage";
 
 const router = createBrowserRouter([
@@ -12,7 +12,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/:id",
-    element: <ChallangeTemplate />,
+    element: <ChallengeTemplate />,
   },
   {
     path: "*",

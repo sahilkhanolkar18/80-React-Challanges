@@ -1,5 +1,5 @@
 import { useMemo, useState, useEffect } from "react";
-import fetchData from "./utils";
+import fetchData from "../components/utils";
 
 const Challange37 = () => {
   const [data, setData] = useState<any>([]);

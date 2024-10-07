@@ -6,7 +6,7 @@ import Snippents from "../data/data";
 import NotFound from "~/components/ErrorPage";
 import Header from "~/components/Header";
 
-const ChallangeTemplate = () => {
+const ChallengeTemplate = () => {
   const navigate = useNavigate();
   const { id } = useParams();
   const [activeTab, setActiveTab] = useState("problem");
@@ -207,4 +207,4 @@ const ChallangeTemplate = () => {
   );
 };
 
-export default ChallangeTemplate;
+export default ChallengeTemplate;

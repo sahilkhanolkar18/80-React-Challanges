@@ -72,9 +72,9 @@ const ChallangeTemplate = () => {
         >
           <BackIcon />
         </button>
-        <div className="relative flex gap-2 ml-0  bg-gray-100 py-1.5 pl-2 w-[455px] rounded-md">
+        <div className="relative flex gap-2 ml-0 rounded-md bg-gray-100 py-1 pl-2 w-[384px] rounded- text-sm">
           <button
-            className={`px-6 py-2 text-gray-700 ${
+            className={`px-4 py-2 text-gray-700 ${
               activeTab === "problem" ? "bg-primary-300  rounded-md" : ""
             }`}
             onClick={() => setActiveTab("problem")}
@@ -82,7 +82,7 @@ const ChallangeTemplate = () => {
             Problem
           </button>
           <button
-            className={`px-6 py-2 text-gray-700 ${
+            className={`px-4 py-2 text-gray-700 ${
               activeTab === "code" ? "bg-primary-300  rounded-md" : ""
             }`}
             onClick={() => setActiveTab("code")}
@@ -90,7 +90,7 @@ const ChallangeTemplate = () => {
             Solution & Code
           </button>
           <button
-            className={`px-6 py-2 text-gray-700 ${
+            className={`px-4 py-2 text-gray-700 ${
               activeTab === "learned" ? "bg-primary-300  rounded-md" : ""
             }`}
             onClick={() => setActiveTab("learned")}
@@ -107,21 +107,21 @@ const ChallangeTemplate = () => {
           <h1 className="text-md font-medium text-gray-600 underline">
             Challange #{id}
           </h1>
-          <h1 className="font-semibold text-[32px] text-gray-700">
+          <h1 className="font-semibold text-2xl text-gray-700 mt-2">
             {/*@ts-ignore*/}
             {Snippents[id - 1]?.heading}
           </h1>
-          <p className="text-gray-600 text-md my-2 text-lg mt-3">
+          <p className="text-gray-600 text-md my-2 t mt-3">
             {/*@ts-ignore*/}
             {Snippents[id - 1]?.description}
           </p>
           <h4 className="font-semibold text-gray-600 text-md my-4">Tasks</h4>
-          <ul className="list-disc pl-5 flex flex-col gap-1">
+          <ul className="list-disc pl-5 flex flex-col gap-2">
             {/*@ts-ignore*/}
             {Snippents[id - 1]?.problem.map(
               (problem: string, index: number) => {
                 return (
-                  <li key={index} className="text-[#495057] text-lg">
+                  <li key={index} className="text-gray-600 text-md">
                     {problem}
                   </li>
                 );

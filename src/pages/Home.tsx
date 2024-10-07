@@ -1,9 +1,8 @@
 import { useState } from "react";
 import Card from "~/components/Card";
-import Me from "../assets/me.jpg";
 import Snippents from "~/data/data";
-import { ReactLogo } from "../assets/svgIcons";
-import { ListIcon, GridIcon, Chevron } from "../assets/svgIcons";
+import { ListIcon, GridIcon } from "../assets/svgIcons";
+import Header from "~/components/Header";
 
 const Home = () => {
   const [isGridView, setIsGridView] = useState(false);
@@ -13,99 +12,77 @@ const Home = () => {
     setSortOrder(sortOrder === "asc" ? "desc" : "asc");
   };
 
-  // Sort the Snippents based on id
   const sortedSnippents = [...Snippents].sort((a, b) => {
-    if (sortOrder === "asc") {
-      return a.id - b.id;
-    } else {
-      return b.id - a.id;
-    }
+    return sortOrder === "asc" ? a.id - b.id : b.id - a.id;
   });
 
   return (
     <div className="relative m-0">
-      <div className="absolute left-8 top-0 flex gap-2 justify-center items-center">
-        <ReactLogo />
-        <p className="font-semibold text-[20px] text-[#343a40]">
-          {"React Dev </>"}
-        </p>
-      </div>
-      <h1 className="text-center mt-4 font-semibold text-[24px] mb-4 text-[#212529] ">
-        80 React.js Challenges🔥
-      </h1>
-      <hr className="mx-[20px] text-[#868e96]" />
+      <Header />
 
-      {/* View and Sorting Controls */}
-      <div className="flex  gap-4 my-4 mx-8">
-        <div className="bg-[#e9ecef] rounded px-2 py-1 flex justify-center items-center gap-1">
+      {/* View Toggle & Sort Section */}
+      <div className="flex gap-0 my-4 mx-8">
+        <div className="bg-gray-100 rounded-md px-2 py-1 flex justify-center items-center gap-1">
           <button
-            onClick={() => {
-              setIsGridView(false);
-            }}
+            onClick={() => setIsGridView(false)}
             className={`${
-              isGridView ? "" : "bg-[#f59f0094]"
-            } px-4 py-2  rounded flex justify-center items-center gap-1`}
+              isGridView ? "" : "bg-primary-300"
+            } px-2 py-2 rounded-md flex justify-center items-center gap-1 transition-colors duration-300`}
           >
-            {" "}
             <ListIcon />
-            List View
+            <p className="text-sm text-gray-700">List View</p>
           </button>
           <button
-            onClick={() => {
-              setIsGridView(true);
-            }}
+            onClick={() => setIsGridView(true)}
             className={`${
-              isGridView ? "bg-[#f59f0094]" : ""
-            } px-4 py-2  rounded flex justify-center items-center gap-1`}
+              isGridView ? "bg-primary-300" : ""
+            } px-2 py-2 rounded-md flex justify-center items-center gap-1 transition-colors duration-300`}
           >
             <GridIcon />
-            Grid View
+            <p className="text-sm text-gray-700">Grid View</p>
           </button>
         </div>
+
+        {/* Sort Button */}
         <button
           onClick={handleSort}
-          className="px-4 py-2 bg-green-500 text-white rounded flex justify-center items-center"
+          className="px-4 py-2 text-sm rounded flex justify-center items-center gap-0.5 text-gray-700"
         >
-          Sort by ID: {sortOrder === "asc" ? "Ascending" : "Descending"}
-          <Chevron />
+          Order
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="20px"
+            viewBox="0 -960 960 960"
+            width="20px"
+            fill="#374151"
+            className={`transition-transform duration-300 ${
+              sortOrder === "asc" ? "rotate-0" : "rotate-180"
+            }`}
+          >
+            <path d="M480-525 291-336l-51-51 240-240 240 240-51 51-189-189Z" />
+          </svg>
         </button>
       </div>
+      <hr className="w-[98%] m-auto" />
 
       {/* Snippets Section */}
       <div
         className={`${
           isGridView
-            ? "grid grid-cols-4 mobile:grid-cols-1 laptop:grid-cols-3 desktop:grid-cols-4 gap-4 mx-4"
+            ? "grid grid-cols-4 mobile:grid-cols-1 laptop:grid-cols-3 desktop:grid-cols-3 gap-10 desktop:mx-32 laptop:mx-12 "
             : "flex flex-col"
-        }`}
+        } transition-all duration-300 ease-in-out`}
       >
-        {sortedSnippents.map((item, index) => (
+        {sortedSnippents.map((item) => (
           <Card
-            key={index}
+            key={item.id}
             label={item.name}
             index={item.id - 1}
             image={item.image}
             isGridView={isGridView}
+            className="transition-opacity transform duration-300 ease-in-out opacity-0 animate-fade-in"
           />
         ))}
-      </div>
-
-      {/* User Profile */}
-      <div className="absolute top-0 right-10 flex gap-2 ">
-        <div className="w-11 h-11 rounded-full overflow-hidden border border-[#da6c36] border-[2px]">
-          <img src={Me} alt="me" />
-        </div>
-        <div className="flex flex-col items-center relative">
-          <p className="text-sm mt-1">Sahil Khanolkar</p>
-          <a
-            href={`https://github.com/sahilkhanolkar18`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[12px] underline absolute bottom-1 right-8"
-          >
-            Git Hub
-          </a>
-        </div>
       </div>
     </div>
   );

@@ -4,6 +4,7 @@ import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import ChallengeTemplate from "./pages/ChallengeTemplate";
 import NotFound from "./components/ErrorPage";
+import SideBar from "./components/SideBar";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
   {
     path: "/:id",
     element: <ChallengeTemplate />,
+  },
+  {
+    path: "/sidebar",
+    element: <SideBar />,
   },
   {
     path: "*",

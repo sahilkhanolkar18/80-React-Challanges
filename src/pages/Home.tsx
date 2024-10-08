@@ -3,6 +3,7 @@ import Card from "~/components/Card";
 import Snippents from "~/data/data";
 import { ListIcon, GridIcon } from "../assets/svgIcons";
 import Header from "~/components/Header";
+import SideBar from "~/components/SideBar";
 
 const Home = () => {
   const [isGridView, setIsGridView] = useState(false);
@@ -64,25 +65,34 @@ const Home = () => {
         </button>
       </div>
       <hr className="w-[98%] m-auto" />
-
       {/* Snippets Section */}
-      <div
-        className={`${
-          isGridView
-            ? "grid grid-cols-4 mobile:grid-cols-1 laptop:grid-cols-3 desktop:grid-cols-3 gap-10 desktop:mx-32 laptop:mx-12 "
-            : "flex flex-col"
-        } transition-all duration-300 ease-in-out`}
-      >
-        {sortedSnippents.map((item) => (
-          <Card
-            key={item.id}
-            label={item.name}
-            index={item.id - 1}
-            image={item.image}
-            isGridView={isGridView}
-            className="transition-opacity transform duration-300 ease-in-out opacity-0 animate-fade-in"
-          />
-        ))}
+      <div className="flex w-full ">
+        {/* Main content */}
+        <div className="flex-grow ">
+          <div
+            className={`${
+              isGridView
+                ? "grid grid-cols-3 mobile:grid-cols-1 laptop:grid-cols-3 desktop:grid-cols-3 gap-6 desktop:mx-30 laptop:mx-12"
+                : "flex flex-col"
+            } transition-all duration-300 ease-in-out`}
+          >
+            {sortedSnippents.map((item) => (
+              <Card
+                key={item.id}
+                label={item.name}
+                index={item.id - 1}
+                image={item.image}
+                isGridView={isGridView}
+                className="transition-opacity transform duration-300 ease-in-out opacity-0 animate-fade-in"
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Sidebar */}
+        <div className="w-1/5 mr-6 mt-8">
+          <SideBar Snippents={Snippents} />
+        </div>
       </div>
     </div>
   );

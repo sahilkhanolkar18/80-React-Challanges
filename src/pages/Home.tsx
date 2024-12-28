@@ -67,6 +67,11 @@ const Home = () => {
       <hr className="w-[98%] m-auto" />
       {/* Snippets Section */}
       <div className="flex w-full ">
+        {/* Sidebar */}
+        <div className="w-1/5 ml-6 mt-8">
+          <SideBar Snippents={Snippents} />
+        </div>
+
         {/* Main content */}
         <div className="flex-grow ">
           <div
@@ -87,11 +92,6 @@ const Home = () => {
               />
             ))}
           </div>
-        </div>
-
-        {/* Sidebar */}
-        <div className="w-1/5 mr-6 mt-8">
-          <SideBar Snippents={Snippents} />
         </div>
       </div>
     </div>

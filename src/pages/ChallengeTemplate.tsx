@@ -103,7 +103,7 @@ const ChallengeTemplate = () => {
       <hr className="m-auto mx-[25px] text-gray-700 mt-3" />
 
       {activeTab === "problem" && (
-        <div className="mx-[20px]  mt-4 w-[1000px] ml-14">
+        <div className="mx-[20px]  mt-4 max-w-[1000px] ml-14">
           <h1 className="text-md font-medium text-gray-600 underline">
             Challange #{id}
           </h1>

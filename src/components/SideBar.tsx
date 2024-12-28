@@ -41,7 +41,7 @@ const SideBar = ({ Snippents }: any) => {
               {
                 <div className="">
                   <div className="mt-3"></div>
-                  <h1 className="text-gray-800 px-6 font-semibold text-md mb-1">
+                  <h1 className="text-gray-700 px-6 font-semibold text-md mb-1">
                     Custom Hooks:
                   </h1>
                   <hr className="text-gray-800 w-[90%] m-auto my-2" />
@@ -64,7 +64,7 @@ const SideBar = ({ Snippents }: any) => {
             key={data.id}
             className="text-gray-700 flex gap-1 text-sm px-6 py-0.5 cursor-pointer"
           >
-            <p className="w-5">{data.id}.</p>
+            <p className="w-5 text-right ">{data.id}.</p>
             <Link to={`/${data.id}`} className="hover:underline">
               {data.name}
             </Link>

@@ -125,7 +125,7 @@ const ChallengeTemplate = () => {
                     {problem}
                   </li>
                 );
-              }
+              },
             )}
           </ul>
         </div>
@@ -162,7 +162,7 @@ const ChallengeTemplate = () => {
           </div>
 
           <a
-            href={`https://github.com/sahilkhanolkar18/80-React-Challanges/blob/master/src/components/Challange${id}.tsx`}
+            href={`https://github.com/sahilkhanolkar18/80-React-Challanges/blob/master/src/challenges/Challange${id}.tsx`}
             target="_blank"
             rel="noopener noreferrer"
             className="absolute bottom-8 right-20 px-3 py-2 bg-primary-500 hover:bg-primary-600 flex rounded text-gray-800"
